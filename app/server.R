@@ -1,5 +1,5 @@
 library(sp)
-library(cartography)
+
 
 shinyServer(function(input, output){
   
@@ -15,6 +15,8 @@ shinyServer(function(input, output){
   output$usergeolocation <- renderPrint({
     input$usergeolocation
   })
+  
+  
   
   points <- eventReactive(input$submit,{
     var <- cbind(1:5,rnorm(5)*0.01 + -73.96, rnorm(5)*0.01 + 40.8)
@@ -33,13 +35,13 @@ shinyServer(function(input, output){
   )
   
   
+  
   output$map <- renderLeaflet({
     
     leaflet() %>%
       
       addTiles(
-        #urlTemplate = "//{s}.tiles.mapbox.com/v3/jcheng.map-5ebohr46/{z}/{x}/{y}.png",
-        #attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
+        'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiam9leXRoZWRvZyIsImEiOiJjaW41MW5mNmYwY2NrdXJra2g4bmR3Y3dhIn0.5DzFBRvdn_9OHFmDFYwFmw'
       )%>%
       addMarkers(data=points(),lat = ~lat,lng = ~lon)%>%
       addPolylines(data = routes())

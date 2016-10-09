@@ -49,7 +49,8 @@ dashboardPage(
                 menuItem('Route Planner', tabName = 'routeplan', icon = shiny::icon('street-view'), 
                          div(strong('Starting Position', style = 'font-size:10.7pt'), style = 'line-height:200%;padding-left:11px'),
                          sidebarSearchForm(textId = 'userlocation', buttonId = 'searchButton', 
-                                           icon = shiny::icon('location-arrow'), label = 'e.g.: Columbia Univeristy'),
+                                           icon = shiny::icon('search'), label = 'e.g.: Columbia Univeristy'),
+                         checkboxInput('currentlocation', 'Use Current Location', F),
                          sliderInput(inputId = 'distance', label = 'Distance (Mile)', value = 3, min = 0, max = 15, step = 0.1),
                          
                          tags$hr(),
@@ -63,8 +64,9 @@ dashboardPage(
                          checkboxInput('track', 'Running Track', FALSE),
                          checkboxInput('drink', 'Drinking Fountain', FALSE),
                          checkboxInput('dog', 'Dog Runs & Off-Leash Area', FALSE),
-                         tags$br(),
-                         div(actionButton('submit', 'Run', icon = shiny::icon('blind')), style = 'padding-left: 11px')
+                         div(actionButton('submit', 'Run', icon = shiny::icon('blind'), style="color: #fff; background-color: #337ab7; border-color: #2e6da4"), style = 'padding-left: 11px'),
+                         tags$style(type='text/css', "#submit{height: 40px; width:62%; font-size: 16px}"),
+                         tags$br()
                 ),
                 menuItem('Running Map Overview', tabName = 'runmap', icon = shiny::icon('map-pin'))
                 )
@@ -77,7 +79,13 @@ dashboardPage(
   dashboardBody(
     
     tabItem(tabName = 'routeplan',
-            leafletOutput('map', width = '100%', height = 1000)
+            leafletOutput('map', width = '100%', height = 1000),
+            fluidRow(column(width = 2,
+                            verbatimTextOutput("userlat"),
+                            verbatimTextOutput("userlong"),
+                            verbatimTextOutput("usergeolocation"))
+            )
+            
     ),
     
     tabItem(tabName = 'runmap',
