@@ -107,11 +107,11 @@ randomnode[,3]=runif(num,0,100)
 
 #######################################################################
 cai=Meander(-73.97396,40.78870,-1,-1,5,randomnode[,1:2],randomnode[,3])
-
-
+x=-74
+y=40.75
 #x=mean(randomnode[start_node,1],randomnode[end_node,1])
 #y=mean(randomnode[start_node,2],randomnode[end_node,2])
-m <- leaflet() %>% setView(lng = x, lat =y, zoom =13)
+m <- leaflet() %>% setView(lng = x, lat =y, zoom =12)
 m= m %>%addTiles() 
 m= m %>% addCircles(lng=randomnode[,1],lat=randomnode[,2],radius=100,col="red")
 m %>% addPolylines (lng=cai[[2]][,1],lat=cai[[2]][,2])
