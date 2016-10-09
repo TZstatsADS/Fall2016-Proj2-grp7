@@ -6,6 +6,15 @@ library(leaflet)
 library(DT)
 library(shinydashboard)
 
+#drop-downs
+SafetyLevel <- c("Very Important to me!", 
+                 "Let it be okay",
+                 "Not Care at all" 
+)
+AirQuality <- c("Very Important to me!", 
+                "Let it be okay",
+                "Not Care at all" 
+)
  
 shinyUI(
         dashboardPage(skin = "yellow", 
@@ -16,43 +25,40 @@ shinyUI(
                                                  )
                                        ),
                   
-                        sidebarMenu(
-                          
+                          sidebarMenu(
                           menuItem("Running Map", tabName = "mapping", icon = icon("map")),
-                          menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs"))
-                        )
+                          menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs")))
                       ),
-                      
                       dashboardBody(#div(class = "outer",
                                           #tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
                                           #tags$head(includeCSS("styles.css"))
                                          
                                     #),
                                      tags$head(tags$link(rel = "icon", type = "image/png", href = "favicon.png"),
-                                     tags$title("Popular Running Spots")
-                                              ),
-                                    tabItems(
-                                             tabItem(tabName = "mapping"
-                                                     ,leafletOutput("map",height = 800)
-                                           #,tabPanel(Title = "Mapping"  
-                                                     #,div(class="outer",
-                                                       #tags$head(
-                                                            #includeCSS("styles.css")
-                                                       #)   
-                                                      #,absolutePanel(id = "controls", class = "panel panel-default", fixed = TRUE,
-                                                               #top = 30, left = "auto", right = 35, width = 330, height = "auto",draggable = TRUE
-                                                               #,checkboxInput("park", "GO Park", width = "90%")
-                                                               #,checkboxInput("riverside","Go Riverside", width = "90%")
-                                                               #,checkboxInput("dog", "Dog Friendly",width = "90%")
-                                                               #,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
-                                                               #,selectInput("safety","Safety",SafetyLevel)
-                                                               #,selectInput("airquality", "Airquality", AirQuality)
-                                                               #,actionButton("MAPping"),
+                                     tags$title("Popular Running Spots")),
+                                     tabItems(
+                                             tabItem(tabName = "mapping",
+                                                     tabPanel("Mapping",  
+                                                     leafletOutput("map",height = 800),
+                                                     div(class="outer",
+                                                          tags$head(includeCSS("styles.css")),
+                                                          absolutePanel(id = "controls", class = "panel panel-default", 
+                                                                        #fixed = TRUE,
+                                                               top = 100, left = "auto", right = 35, width = 330, height = "auto",draggable = TRUE
+                                                               
+                                                               
+                                                               ,checkboxInput("park", "GO Park", width = "90%")
+                                                               ,checkboxInput("riverside","Go Riverside", width = "90%")
+                                                               ,checkboxInput("dog", "Dog Friendly",width = "90%")
+                                                               ,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
+                                                               ,selectInput("safety","Safety",SafetyLevel)
+                                                               ,selectInput("airquality", "Airquality", AirQuality)
+                                                               #,actionButton("MAPping")
                                                                #,tags$style(type='text/css', "#recalc{horizontal-align:middle; position: absolute;left:35px;height: 43px; width:62%; font-size: 15px}")
-                                                       #)
-                                                       #)
-                                              #)
-                                           )
+                                                      )
+                                                      )
+                                                      )
+                                              )
                                     )
                       ) 
           )
