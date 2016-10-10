@@ -50,9 +50,9 @@ shinyUI(
                                                                
                                                                ,checkboxInput("park", "GO Park", width = "90%", value = TRUE)
                                                                ,checkboxInput("riverside","Go Riverside", width = "90%")
-                                                               ,checkboxInput("dog", "Dog Friendly",width = "90%")
+                                                               ,checkboxInput("dog", "Dog Friendly",width = "90%", value = TRUE)
                                                                ,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
-                                                               ,selectInput("safety","Safety",SafetyLevel)
+                                                               ,selectInput("safety","Safety",SafetyLevel, selected = "Let it be okay")
                                                                ,selectInput("airquality", "Airquality", AirQuality)
                                                                #,actionButton("submit","MAPPING")
                                                                #,tags$style(type='text/css', "#recalc{horizontal-align:middle; position: absolute;left:35px;height: 43px; width:62%; font-size: 15px}")

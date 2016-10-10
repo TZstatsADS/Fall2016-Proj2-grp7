@@ -8,6 +8,8 @@ library(mapdata)
 
 
 
+
+
 shinyServer(function(input,output,session){
   
 
@@ -18,8 +20,7 @@ shinyServer(function(input,output,session){
         runIcon <-
         makeIcon(
         iconUrl = "runner icon.png",
-        iconWidth = 25, iconHeight = 25,
-        iconAnchorX = 13, iconAnchorY = 13
+        iconWidth = 30, iconHeight = 30
         )
 #load the map
         # leaflet() %>% 
@@ -32,7 +33,7 @@ shinyServer(function(input,output,session){
 
 
 #set preference for runing environment
-         run = read.csv("test.csv")
+         #run = read.csv("test.csv")
 
          preference <-  reactive({
                 rrr <- run
@@ -50,14 +51,23 @@ shinyServer(function(input,output,session){
                   }
                   
                   if(input$safety == "Very Important to me!"){
-                    filter(run, Safety == "5")
+                    rrr = filter(rrr, Safety == "5")
                   }
                   if(input$safety == "Let it be okay"){
-                    filter(run, Safety == "3" | Safety == "4")
+                    rrr = filter(rrr, Safety == "3" | Safety == "4")
                   }
-                  # if(input$safety == "Not Care at all"){
-                  #   filter(run, Safety == "5")
-                  # }
+                  if(input$safety == "Not Care at all"){
+                    rrr = rrr
+                  }
+                  if(input$airquality == "Very Important to me!"){
+                    rrr = filter(rrr, Airquality == "5")
+                  }
+                  if(input$airquality == "Let it be okay"){
+                    rrr = filter(rrr, Airquality == "3" | airquality == "4")
+                  }
+                  if(input$airquality == "Not Care at all"){
+                    rrr = rrr
+                  }
            return(rrr)
 
            })
@@ -70,14 +80,14 @@ shinyServer(function(input,output,session){
 #add markers for running spots
          output$map <- renderLeaflet({
            leaflet()%>% 
-           # addTiles(urlTemplate = "https://api.mapbox.com/styles/v1/jackiecao/ciu0jcgy800ah2ipgpsw5usmi/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFja2llY2FvIiwiYSI6ImNpdTBqYXhmcjAxZ24ycGp3ZWZ1bTJoZ3QifQ.VytIrn5ZxVjtZjM15JPA9Q",
-           #          attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
-           # )%>%
-           addProviderTiles("CartoDB.Positron")%>%
+           addTiles(urlTemplate = "https://api.mapbox.com/styles/v1/jackiecao/ciu0jcgy800ah2ipgpsw5usmi/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFja2llY2FvIiwiYSI6ImNpdTBqYXhmcjAxZ24ycGp3ZWZ1bTJoZ3QifQ.VytIrn5ZxVjtZjM15JPA9Q",
+                    attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
+           )%>%
+           # addProviderTiles("CartoDB.Positron")%>%
            #setView(lng = -73.97, lat = 40.75, zoom = 13) %>% 
            #addMarkers(data = run, ~long, ~lat,icon = runIcon)   
            addMarkers(data = preference(), ~long, ~lat, icon = runIcon
-                      ,popup = paste("*Neighborhood:",preference()$Location, "<br>"))
+                      ,popup = paste("*Address:",preference()$address, "<br>"))
          })
            
      
@@ -87,7 +97,7 @@ shinyServer(function(input,output,session){
              #          leafletProxy("output$map",data = preference()) %>%   
              #          clearMarkers() %>%
              #          addMarkers(data = preference(), lng = Long, lat = Lat, icon = runIcon
-             #          ,popup = paste("*Neighborhood:",preference()$Location, "<br>")
+             #          ,popup = paste("*Address:",preference()$address, "<br>")
              # 
              #   )
              #   })
