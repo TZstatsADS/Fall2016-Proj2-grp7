@@ -26,8 +26,8 @@ shinyUI(
                                        ),
                   
                           sidebarMenu(
-                          menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs")),
-                          menuItem("Running Map", tabName = "mapping", icon = icon("map"))
+                          menuItem("Running Map", tabName = "mapping", icon = icon("map")),
+                          menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs"))
                           )
                       ),
                       dashboardBody(#div(class = "outer",
