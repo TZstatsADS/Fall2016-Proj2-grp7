@@ -26,7 +26,13 @@ shinyUI(
                                        ),
                   
                           sidebarMenu(
-                          menuItem("Running Map", tabName = "mapping", icon = icon("map")),
+                          menuItem("Running Map", tabName = "mapping", icon = icon("map")
+                                   ,checkboxInput("park", "GO Park", width = "90%", value = TRUE)
+                                   ,checkboxInput("riverside","Go Riverside", width = "90%")
+                                   ,checkboxInput("dog", "Dog Friendly",width = "90%", value = TRUE)
+                                   ,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
+                                   ,selectInput("safety","Safety",SafetyLevel, selected = "Let it be okay")
+                                   ,selectInput("airquality", "Airquality", AirQuality)),
                           menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs"))
                           )
                       ),
@@ -37,30 +43,12 @@ shinyUI(
                                     #),
                                      tags$head(tags$link(rel = "icon", type = "image/png", href = "favicon.png"),
                                      tags$title("Popular Running Spots")),
-                                     tabItems(
+                                     
                                              tabItem(tabName = "mapping",
-                                                     tabPanel("Mapping",  
-                                                     leafletOutput("map",height = 800),
-                                                     div(class="outer",
-                                                          tags$head(includeCSS("styles.css")),
-                                                          absolutePanel(id = "controls", class = "panel panel-default", 
-                                                                        #fixed = TRUE,
-                                                               top = 100, left = "auto", right = 35, width = 330, height = "auto",draggable = TRUE
-                                                               
-                                                               
-                                                               ,checkboxInput("park", "GO Park", width = "90%", value = TRUE)
-                                                               ,checkboxInput("riverside","Go Riverside", width = "90%")
-                                                               ,checkboxInput("dog", "Dog Friendly",width = "90%", value = TRUE)
-                                                               ,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
-                                                               ,selectInput("safety","Safety",SafetyLevel, selected = "Let it be okay")
-                                                               ,selectInput("airquality", "Airquality", AirQuality)
-                                                               #,actionButton("submit","MAPPING")
-                                                               #,tags$style(type='text/css', "#recalc{horizontal-align:middle; position: absolute;left:35px;height: 43px; width:62%; font-size: 15px}")
-                                                      )
-                                                      )
-                                                      )
+                                                     leafletOutput("map",height = 800)
+                                               
                                               )
-                                    )
+                                    
                       ) 
           )
         
