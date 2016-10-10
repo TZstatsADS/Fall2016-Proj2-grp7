@@ -26,8 +26,9 @@ shinyUI(
                                        ),
                   
                           sidebarMenu(
-                          menuItem("Running Map", tabName = "mapping", icon = icon("map")),
-                          menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs")))
+                          menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs")),
+                          menuItem("Running Map", tabName = "mapping", icon = icon("map"))
+                          )
                       ),
                       dashboardBody(#div(class = "outer",
                                           #tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
@@ -47,13 +48,13 @@ shinyUI(
                                                                top = 100, left = "auto", right = 35, width = 330, height = "auto",draggable = TRUE
                                                                
                                                                
-                                                               ,checkboxInput("park", "GO Park", width = "90%")
+                                                               ,checkboxInput("park", "GO Park", width = "90%", value = TRUE)
                                                                ,checkboxInput("riverside","Go Riverside", width = "90%")
                                                                ,checkboxInput("dog", "Dog Friendly",width = "90%")
                                                                ,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
                                                                ,selectInput("safety","Safety",SafetyLevel)
                                                                ,selectInput("airquality", "Airquality", AirQuality)
-                                                               #,actionButton("MAPping")
+                                                               #,actionButton("submit","MAPPING")
                                                                #,tags$style(type='text/css', "#recalc{horizontal-align:middle; position: absolute;left:35px;height: 43px; width:62%; font-size: 15px}")
                                                       )
                                                       )
