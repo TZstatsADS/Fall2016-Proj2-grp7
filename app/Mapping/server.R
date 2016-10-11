@@ -54,7 +54,7 @@ shinyServer(function(input,output,session){
                     rrr = filter(rrr, Safety == "5")
                   }
                   if(input$safety == "Let it be okay"){
-                    rrr = filter(rrr, Safety == "3" | Safety == "4")
+                    rrr = filter(rrr, Safety >= 3)
                   }
                   if(input$safety == "Not Care at all"){
                     rrr = rrr
@@ -63,7 +63,7 @@ shinyServer(function(input,output,session){
                     rrr = filter(rrr, Airquality == "5")
                   }
                   if(input$airquality == "Let it be okay"){
-                    rrr = filter(rrr, Airquality == "3" | airquality == "4")
+                    rrr = filter(rrr, Airquality >= 3)
                   }
                   if(input$airquality == "Not Care at all"){
                     rrr = rrr
@@ -91,16 +91,7 @@ shinyServer(function(input,output,session){
          })
            
      
-           #addMarkers(data = run, icon = runIcon)
-             # observe({
-             #          
-             #          leafletProxy("output$map",data = preference()) %>%   
-             #          clearMarkers() %>%
-             #          addMarkers(data = preference(), lng = Long, lat = Lat, icon = runIcon
-             #          ,popup = paste("*Address:",preference()$address, "<br>")
-             # 
-             #   )
-             #   })
+        
 
      
 

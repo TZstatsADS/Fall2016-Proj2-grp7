@@ -32,7 +32,7 @@ shinyUI(
                                    ,checkboxInput("dog", "Dog Friendly",width = "90%", value = TRUE)
                                    ,checkboxInput("drinkingfountain","Drinking Fountain Accessible", width = "90%")
                                    ,selectInput("safety","Safety",SafetyLevel, selected = "Let it be okay")
-                                   ,selectInput("airquality", "Airquality", AirQuality)),
+                                   ,selectInput("airquality", "Air Quality", AirQuality)),
                           menuItem("Running Routes Planner", tabName = "routes", icon = icon("map-signs"))
                           )
                       ),
