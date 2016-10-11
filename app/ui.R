@@ -49,7 +49,7 @@ dashboardPage(
                 menuItem('Route Planner', tabName = 'routeplan', icon = shiny::icon('street-view'), 
                          div(strong('Starting Position', style = 'font-size:10.7pt'), style = 'line-height:200%;padding-left:11px'),
                          sidebarSearchForm(textId = 'userlocation', buttonId = 'searchButton', 
-                                           icon = shiny::icon('search'), label = 'e.g.: Columbia Univeristy'),
+                                           icon = shiny::icon('search'), label = 'e.g.: Columbia Univeristy, New York'),
                          checkboxInput('currentlocation', 'Use Current Location', F),
                          sliderInput(inputId = 'distance', label = 'Distance (Mile)', value = 3, min = 0, max = 15, step = 0.1),
                          
