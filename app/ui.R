@@ -79,18 +79,11 @@ dashboardPage(
   dashboardBody(
     
     tabItem(tabName = 'routeplan',
-            leafletOutput('map', width = '100%', height = 1000),
-            fluidRow(column(width = 2,
-                            verbatimTextOutput("userlat"),
-                            verbatimTextOutput("userlong"),
-                            verbatimTextOutput("usergeolocation"))
-            )
+            leafletOutput('map', width = '100%', height = 1000)
             
     ),
     
-    tabItem(tabName = 'runmap',
-            div(strong('Starting Position', style = 'font-size:10.7pt'), style = 'line-height:200%;padding-left:11px')
-            )
+    tabItem(tabName = 'runmap')
     
     
   )

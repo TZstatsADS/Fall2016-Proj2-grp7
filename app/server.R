@@ -162,7 +162,7 @@ shinyServer(function(input, output){
       addTiles(
         'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiam9leXRoZWRvZyIsImEiOiJjaW41MW5mNmYwY2NrdXJra2g4bmR3Y3dhIn0.5DzFBRvdn_9OHFmDFYwFmw'
       )%>%
-      setView(lng = -73.97396, lat =40.78870, zoom =12)%>%
+      setView(lng = -73.97396, lat =40.78870, zoom =15)%>%
 
       #addMarkers(data=points(),lat = ~lat,lng = ~lon)%>%
       addPolylines(data=routes())
