@@ -10,7 +10,7 @@ library(mapdata)
 run <- read.csv("test.csv")
 
 
-shinyServer(function(input,output){
+shinyServer(function(input,output,session){
   
   
   
@@ -52,7 +52,7 @@ shinyServer(function(input,output){
     else if (input$park ==FALSE){
       rrr = filter(rrr,Park == 3)
     }
-    
+      
     # if(input$safety == "Very Important to me!"){
     #   rrr = filter(rrr, Safety == "5")
     # }
@@ -76,6 +76,16 @@ shinyServer(function(input,output){
     
   })
   
+  # preference4 <-  reactive({
+  #   rrr <- run
+  #   if(input$park == FALSE){
+  #     rrr = filter(rrr, Park == 1)
+  #   }
+  #   else if (input$park ==TRUE){
+  #     rrr = filter(rrr,Park == 3)
+  #     return(rrr)
+  #   }
+  #   })
   
   preference1 <- reactive({
     rrr <- run
@@ -104,15 +114,7 @@ shinyServer(function(input,output){
     else rrr = filter(rrr, DrinkingFountain == "3")
     return(rrr)
   })   
-  
-  preference4 <- reactive({
-    rrr <- run
-    if(input$drinkingfountain ==FALSE){
-      rrr = filter(rrr, DrinkingFountain == "1")
-    }
-    else rrr = filter(rrr, DrinkingFountain == "3")
-    return(rrr)
-  }) 
+
   
   
   
@@ -134,16 +136,41 @@ shinyServer(function(input,output){
       setView(lng = -73.97, lat = 40.75, zoom = 13)  
     
   })
+  
+  # observe({
+  #   proxy =
+  #     leafletProxy("map",session)
+  #   if(!is.null(preference)){
+  #   proxy %>%
+  #     
+  #     addMarkers( data = preference(),
+  #       ~long, ~lat, icon = parkIcon
+  #       ,popup = paste("*Address:",preference()$address,"<br>", layerId = "www")
+  #     )
+  #   }
+  #   if(is.null(preference)){proxy %>%
+  #     addMarkers( data = preference(),
+  #                 ~long, ~lat, icon = parkIcon
+  #                 ,popup = paste("*Address:",preference()$address,"<br>", layerId = "www")
+  #     ) %>%
+  #     removerMarkerCluster(layerId = "www")
+  #   }
+  # })
+  
   observe({
     proxy =
-      leafletProxy("map",data = preference())
+      leafletProxy("map")
     proxy %>%
-      
-      addMarkers( #data = preference(),
+      addMarkers( data = preference(),
         ~long, ~lat, icon = parkIcon
-        ,popup = paste("*Address:",preference()$address,"<br>"), group = "a"
-      ) 
-    
+        ,popup = paste("*Address:",preference()$address,"<br>", group = "parkers")
+      )
+  })
+ 
+  observeEvent(input$park, {
+    proxy <- leafletProxy("map")
+    if (input$park ==TRUE) proxy %>% showGroup("parkers")
+    else proxy %>% hideGroup("parkers")
   })
   
   observe({
