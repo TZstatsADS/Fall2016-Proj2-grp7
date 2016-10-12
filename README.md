@@ -14,6 +14,8 @@ Term: Fall 2016
 	
 + Project summary: It is an App that helps runners to find his/her ideal running route according to personalized preferance.
 
+https://jiayiwang7.shinyapps.io/app_final/
+
 In this second project of Applied Data Science, we will carry out *Exploratory Data Analysis and Visualization* via a shiny app on a topic about open data released from the [New York City open data portal](https://nycopendata.socrata.com/). See [Project 2 Description](doc/project2_desc.md) for more details.  
 
 ```diff
