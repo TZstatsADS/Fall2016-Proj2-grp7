@@ -1,7 +1,7 @@
 library(shiny)
 library(shinydashboard)
 library(leaflet)
-library(osrm)
+#library(osrm)
 library(maptools)
 library(fields)
 library(DT)

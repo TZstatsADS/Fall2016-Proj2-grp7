@@ -10,12 +10,18 @@ library(stats)
 library(pryr)
 library(leaflet)
 library(maps)
-library(osrm)
+#library(osrm)
 library(geosphere)
 library(shiny)
 
 Meander <- function(start_lon,start_lat,end_lon,end_lat,running_distance_in_mile,Nodes,Scores)
 {
+  library(stats)
+  library(pryr)
+  library(leaflet)
+  library(maps)
+  # library(osrm)
+  library(geosphere)
   #  1. Longi; 2. Lati;
   node_info=matrix(0,nrow=length(Scores)+2,ncol=3)
   
@@ -83,13 +89,14 @@ Meander <- function(start_lon,start_lat,end_lon,end_lat,running_distance_in_mile
   print(bestscore)
   
   route_in_osm=matrix(node_info[start_node,1:2],ncol=2)
-  for (i in 2:stops)
-  {
-    Akke=osrmRoute(c(1,node_info[bestroute[i-1],1],node_info[bestroute[i-1],2]),c(2,node_info[bestroute[i],1],node_info[bestroute[i],2]))
-    route_in_osm=rbind(route_in_osm,as.matrix(Akke),node_info[bestroute[i],1:2])
-  }
+  #   for (i in 2:stops)
+  #   {
+  #     Akke=osrmRoute(c(1,node_info[bestroute[i-1],1],node_info[bestroute[i-1],2]),c(2,node_info[bestroute[i],1],node_info[bestroute[i],2]))
+  #     route_in_osm=rbind(route_in_osm,as.matrix(Akke),node_info[bestroute[i],1:2])
+  #   }
   return(list(bestroute,route_in_osm))
 }
+
 
 
 
@@ -162,7 +169,9 @@ shinyServer(function(input, output){
       #print(score)
       #routes
       routes <- Meander(start_lon, start_lat, -1, -1, distance, as.matrix(nodes[,c(2,1)]), scores)
-      routes[[2]]
+      planB=as.matrix(0,nrow=500,ncol=2)
+      planB=rbind(c(start_lon,start_lat),nodes[routes[[1]][2:(length(routes[[1]])-1)],c(2,1)],c(start_lon,start_lat))
+      as.matrix(planB)
       
     }, ignoreNULL = FALSE
   )
@@ -210,125 +219,80 @@ shinyServer(function(input, output){
   
   
   #set preference for runing environment
-  
-  
+  run = read.csv('test.csv')
   preference <-  reactive({
     rrr <- run
-    if(input$park2 == TRUE){
+    if(input$park == TRUE){
       rrr = filter(rrr, Park == 1)
     }
-    if(input$park2 == FALSE){
+    else if (input$park ==FALSE){
       rrr = filter(rrr,Park == 3)
     }
-    if(input$safety2 == 5){
-      rrr = filter(rrr, Safety == 5)
-    }
-    if(input$safety2 == 3){
-      rrr = filter(rrr, Safety >= 3)
-    }
-    if(input$safety2 == 0){
-      rrr = filter(rrr, Safety >0)
-    }
-    if(input$airquality2 == 5){
-      rrr = filter(rrr, Airquality == 5)
-    }
-    if(input$airquality2 == 3){
-      rrr = filter(rrr, Airquality >= 3)
-    }
-    if(input$airquality2 == 0){
-      rrr = filter(rrr, Airquality >0)
-    }
+    
+    # if(input$safety == "Very Important to me!"){
+    #   rrr = filter(rrr, Safety == "5")
+    # }
+    # if(input$safety == "Let it be okay"){
+    #   rrr = filter(rrr, Safety >= 3) 
+    # }
+    # if(input$safety == "Not Care at all"){
+    #   rrr = rrr
+    # }
+    # if(input$airquality == "Very Important to me!"){
+    #   rrr = filter(rrr, Airquality == "5")
+    # }
+    # if(input$airquality == "Let it be okay"){
+    #   rrr = filter(rrr, Airquality >= 3)
+    # }
+    # if(input$airquality == "Not Care at all"){
+    #   rrr = rrr
+    # }
+    
     return(rrr)
+    
   })
   
+  # preference4 <-  reactive({
+  #   rrr <- run
+  #   if(input$park == FALSE){
+  #     rrr = filter(rrr, Park == 1)
+  #   }
+  #   else if (input$park ==TRUE){
+  #     rrr = filter(rrr,Park == 3)
+  #     return(rrr)
+  #   }
+  #   })
   
   preference1 <- reactive({
     rrr <- run
     if(input$riverside == TRUE){
-      rrr = filter(rrr, Riverside == 1)
+      rrr = filter(rrr, Riverside == "1")
     }
-    if(input$riverside == FALSE){
-      rrr = filter(rrr, Riverside == 3)
-    }
-    if(input$safety2 == 5){
-      rrr = filter(rrr, Safety == 5)
-    }
-    if(input$safety2 == 3){
-      rrr = filter(rrr, Safety >= 3)
-    }
-    if(input$safety2 == 0){
-      rrr = filter(rrr, Safety >0)
-    }
-    if(input$airquality2 == 5){
-      rrr = filter(rrr, Airquality == 5)
-    }
-    if(input$airquality2 == 3){
-      rrr = filter(rrr, Airquality >= 3)
-    }
-    if(input$airquality2 == 0){
-      rrr = filter(rrr, Airquality > 0)
-    }
+    else rrr = filter(rrr, Riverside == "3")
     return(rrr)
   })
   
   
   preference2 <- reactive({
     rrr <- run
-    if(input$dog2 == TRUE){
-      rrr = filter(rrr, Dog == 1)
+    if(input$dog == TRUE){
+      rrr = filter(rrr, Dog == "1")
     }
-    if(input$dog2 == FALSE){
-      rrr = filter(rrr, Dog == 3)
-    }
-    # if(input$safety2 == 5){
-    #   rrr = filter(rrr, Safety == 5)
-    # }
-    # if(input$safety2 == 3){
-    #   rrr = filter(rrr, Safety >= 3)
-    # }
-    # if(input$safety2 == 0){
-    #   rrr = filter(rrr, Safety >0)
-    # }
-    # if(input$airquality2 == 5){
-    #   rrr = filter(rrr, Airquality == 5)
-    # }
-    # if(input$airquality2 == 3){
-    #   rrr = filter(rrr, Airquality >= 3)
-    # }
-    # if(input$airquality2 == 0){
-    #   rrr = filter(rrr, Airquality > 0 )
-    # }
+    else rrr = filter(rrr, Dog == "3")
     return(rrr)
   })
   
   preference3 <- reactive({
     rrr <- run
     if(input$drinkingfountain ==TRUE){
-      rrr = filter(rrr, DrinkingFountains == 1)
+      rrr = filter(rrr, DrinkingFountain == "1")
     }
-    if(input$drinkingfountain ==FALSE){
-      rrr = filter(rrr, DrinkingFountains == 3)
-    } 
-    # if(input$safety2 == 5){
-    #   rrr = filter(rrr, Safety == 5)
-    # }
-    # if(input$safety2 == 3){
-    #   rrr = filter(rrr, Safety >= 3)
-    # }
-    # if(input$safety2 == 0){
-    #   rrr = filter(rrr, Safety >0)
-    # }
-    # if(input$airquality2 == 5){
-    #   rrr = filter(rrr, Airquality == 5)
-    # }
-    # if(input$airquality2 == 3){
-    #   rrr = filter(rrr, Airquality >= 3)
-    # }
-    # if(input$airquality2 == 0){
-    #   rrr = filter(rrr, Airquality > 0 )
-    # }
+    else rrr = filter(rrr, DrinkingFountain == "3")
     return(rrr)
-  })
+  })   
+  
+  
+  
   
   
   #add markers for running spots
@@ -343,6 +307,25 @@ shinyServer(function(input, output){
     
   })
   
+  # observe({
+  #   proxy =
+  #     leafletProxy("map",session)
+  #   if(!is.null(preference)){
+  #   proxy %>%
+  #     
+  #     addMarkers( data = preference(),
+  #       ~long, ~lat, icon = parkIcon
+  #       ,popup = paste("*Address:",preference()$address,"<br>", layerId = "www")
+  #     )
+  #   }
+  #   if(is.null(preference)){proxy %>%
+  #     addMarkers( data = preference(),
+  #                 ~long, ~lat, icon = parkIcon
+  #                 ,popup = paste("*Address:",preference()$address,"<br>", layerId = "www")
+  #     ) %>%
+  #     removerMarkerCluster(layerId = "www")
+  #   }
+  # })
   
   observe({
     proxy =
@@ -369,48 +352,6 @@ shinyServer(function(input, output){
         options = layersControlOptions(collapsed = FALSE)
       ) 
   })
-  
-  # observe({
-  #   proxy=
-  #     leafletProxy("map2",data = preference1())
-  #   proxy %>% 
-  #     # clearMarkers() %>%
-  #     addMarkers(#data = preference1(), 
-  #       ~long, ~lat, icon = riverIcon
-  #       ,popup = paste("*Address:",preference1()$address,"<br>"), group = "Rivers & Pools"
-  #     ) %>% 
-  #     addLayersControl(
-  #      
-  #       overlayGroups = c("Rivers & Pools"),
-  #       options = layersControlOptions(collapsed = FALSE)
-  #     )
-  # })
-  
-  # observe({
-  #   proxy=
-  #     leafletProxy("map2",data = preference2())
-  #   proxy %>%
-  #     addMarkers(#data = preference2(),
-  #       ~long, ~lat,icon = dogIcon
-  #       ,popup = paste("*Address:",preference2()$address,"<br>")
-  #     )
-  #   
-  # })
-  
-  
-  # observe({
-  #   proxy =
-  #     leafletProxy("map2",data = preference3()) 
-  #   proxy %>% 
-  #     # clearMarkers() %>%
-  #     addMarkers(#data = preference2(),
-  #       ~long, ~lat, icon = waterIcon
-  #       ,popup = paste("*Address:",preference3()$address,"<br>", layerId = "w")
-  #     )
-  #   
-  # })
-  
-  
   
   
 })
