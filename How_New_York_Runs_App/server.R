@@ -5,6 +5,12 @@ library(leaflet)
 library(sp)
 library(data.table)
 library(ggmap)
+library(RColorBrewer)
+library(dplyr)
+library(ggplot2)
+library(maps)
+library(mapdata)
+
 Meander <- function(start_lon,start_lat,end_lon,end_lat,running_distance_in_mile,Nodes,Scores)
 {
   library(stats)
