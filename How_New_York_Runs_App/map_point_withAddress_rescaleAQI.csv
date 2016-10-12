@@ -1,0 +1,391 @@
+,lat,long,Park,Dog,Riverside,DrinkingFountains,Airquality,RunningTrack,Safety,address,neighborhood
+1,40.749937,-74.009546,1,0,1,0,2,1,5,"63 Chelsea Piers, New York, NY 10011, USA",NA
+2,40.748933,-74.007083,1,1,0,0,2,0,3,"184 11th Ave, New York, NY 10011, USA",Midtown
+3,40.747716,-74.004178,0,0,0,0,2,0,3,"221 10th Ave, New York, NY 10011, USA",Midtown
+4,40.746479,-74.00139,0,0,0,0,2,0,2,"211 9th Ave, New York, NY 10011, USA",Midtown
+5,40.745316,-73.998537,0,0,0,0,2,0,2,"300 W 23rd St, New York, NY 10011, USA",Midtown
+6,40.743426,-73.996202,0,0,0,0,2,0,2,"212 W 22nd St, New York, NY 10011, USA",Midtown
+7,40.741617,-73.99374,0,0,0,0,2,0,2,"64 W 21st St, New York, NY 10010, USA",Midtown
+8,40.740282,-73.990571,1,0,0,0,2,0,1,"1 W 21st St, New York, NY 10010, USA",Midtown
+9,40.740221,-73.986443,0,0,0,0,2,0,2,"46A E 23rd St, New York, NY 10010, USA",Midtown
+10,40.738837,-73.98318,0,0,0,0,2,0,2,"162 E 23rd St, New York, NY 10010, USA",Midtown
+11,40.737871,-73.981013,0,0,0,0,2,0,2,"395 2nd Ave, New York, NY 10010, USA",Midtown
+12,40.736895,-73.978513,0,0,0,0,1,0,2,"394 1st Avenue, New York, NY 10010, USA",Midtown
+13,40.735348,-73.974583,1,0,1,0,1,1,4,"E 23rd St, New York, NY 10010, USA",Midtown
+14,40.731833,-73.973615,1,0,1,0,1,1,4,"E River Bikeway, New York, NY 10009, USA",Stuyvesant Town
+15,40.732625,-73.977277,0,0,0,0,1,0,4,"524 20th St Loop, New York, NY 10009, USA",Midtown
+16,40.734381,-73.980324,0,0,0,0,1,0,3,"320-330 1st Avenue, New York, NY 10009, USA",Midtown
+17,40.735446,-73.982717,0,0,0,0,2,0,1,"245-299 E 19th St, New York, NY 10003, USA",Midtown
+18,40.736389,-73.984991,0,0,0,0,2,0,1,"150 E 19th St, New York, NY 10003, USA",Midtown
+19,40.737706,-73.988135,0,0,0,0,2,0,2,"98 E 19th St, New York, NY 10003, USA",Midtown
+20,40.739104,-73.991354,0,0,0,0,2,0,2,"119 5th Ave, New York, NY 10003, USA",Midtown
+21,40.74047,-73.994626,0,0,0,0,2,0,2,"101-111 W 19th St, New York, NY 10011, USA",Midtown
+22,40.741616,-73.997458,0,0,0,0,2,0,1,"151 7th Ave, New York, NY 10011, USA",Midtown
+23,40.742835,-74.000291,0,0,0,0,2,0,1,"175 8th Ave, New York, NY 10011, USA",Midtown
+24,40.744087,-74.003231,0,0,0,0,2,0,3,"401 W 19th St, New York, NY 10011, USA",Midtown
+25,40.745266,-74.005956,0,0,0,0,2,0,3,"153 10th Ave, New York, NY 10011, USA",Midtown
+26,40.746371,-74.009346,0,0,1,0,2,1,5,"60 Chelsea Piers, New York, NY 10011, USA",NA
+27,40.743307,-74.008896,1,0,1,0,2,1,4,"57 Hudson River Greenway, New York, NY 10011, USA",NA
+28,40.741684,-74.004979,0,0,0,0,2,0,1,"401 W 15th St, New York, NY 10011, USA",Midtown
+29,40.740424,-74.002082,0,0,0,0,2,0,1,"85-101 8th Ave, New York, NY 10011, USA",Midtown
+30,40.739229,-73.999207,0,0,0,0,2,0,2,"74 7th Ave, New York, NY 10011, USA",Midtown
+31,40.741684,-74.004979,0,0,0,0,2,0,1,"401 W 15th St, New York, NY 10011, USA",Midtown
+32,40.736668,-73.993188,0,0,0,0,2,0,2,"96 5th Ave, New York, NY 10011, USA",Midtown
+33,40.735351,-73.989948,1,1,0,1,2,0,1,"24 Union Square E, New York, NY 10003, USA",Midtown
+34,40.734018,-73.986708,0,0,0,0,2,0,2,"199 E 15th St, New York, NY 10003, USA",Midtown
+35,40.733018,-73.984444,1,0,0,0,2,0,2,"237-249 2nd Ave, New York, NY 10003, USA",Midtown
+36,40.731961,-73.981923,0,0,0,0,1,0,2,"353 E 15th St, New York, NY 10003, USA",Midtown
+37,40.730945,-73.978543,0,0,0,0,1,0,4,"523 14th St Loop, New York, NY 10009, USA",Midtown
+38,40.729132,-73.975163,0,0,0,0,1,0,4,"701 E 15th St, New York, NY 10009, USA",Midtown
+39,40.727628,-73.97158,0,0,1,0,1,1,5,"E River Bikeway, New York, NY 10009, USA",NA
+40,40.724669,-73.97277,1,0,1,1,4,1,4,"E River Bikeway, New York, NY 10009, USA",Lower Manhattan
+41,40.725459,-73.974738,0,0,0,0,4,0,3,"164 Avenue D, New York, NY 10009, USA",Lower Manhattan
+42,40.726494,-73.977139,0,0,0,0,4,0,3,"647 E 11th St, New York, NY 10009, USA",East Village
+43,40.727451,-73.979468,0,0,0,0,4,0,2,"176 Avenue B, New York, NY 10009, USA",Lower Manhattan
+44,40.72844,-73.981805,0,0,0,0,4,0,2,"435-499 E 11th St, New York, NY 10009, USA",East Village
+45,40.729365,-73.984012,1,0,0,0,4,0,2,"179 1st Avenue, New York, NY 10003, USA",Lower Manhattan
+46,40.731326,-73.988629,0,0,0,0,4,0,1,"198 E 11th St, New York, NY 10003, USA",East Village
+47,40.732442,-73.991308,0,0,0,0,4,0,2,"80 E 11th St, New York, NY 10003, USA",Lower Manhattan
+48,40.734024,-73.995063,0,0,0,0,4,0,3,"12 E 11th St, New York, NY 10003, USA",Lower Manhattan
+49,40.735385,-73.998307,0,0,0,0,4,0,3,"100 W 11th St, New York, NY 10011, USA",Lower Manhattan
+50,40.736558,-74.001207,0,0,0,0,4,0,2,"192 7th Ave S, New York, NY 10014, USA",Lower Manhattan
+51,40.737879,-74.004597,0,0,0,0,4,0,3,"23 8th Ave, New York, NY 10014, USA",Lower Manhattan
+52,40.739312,-74.008114,0,0,0,0,4,0,2,"812 Washington St, New York, NY 10014, USA",Lower Manhattan
+53,40.738169,-74.010272,1,0,1,0,4,1,4,"Hudson River Greenway, New York, NY 10014, USA",Lower Manhattan
+54,40.735871,-74.006082,1,0,0,0,4,0,3,"301-303 W 11th St, New York, NY 10014, USA",Lower Manhattan
+55,40.734655,-74.002299,0,0,0,0,4,0,1,"140 7th Ave S, New York, NY 10014, USA",Lower Manhattan
+56,40.732256,-73.998729,1,0,0,0,4,0,2,"100-106 Waverly Pl, New York, NY 10011, USA",Lower Manhattan
+57,40.730751,-73.995605,1,0,0,0,4,0,2,"3 Washington Square N, New York, NY 10012, USA",Lower Manhattan
+58,40.729144,-73.992144,0,0,0,0,4,0,2,"432 Lafayette St, New York, NY 10003, USA",Lower Manhattan
+59,40.728026,-73.988257,0,0,0,0,4,0,1,"45 E 7th St, New York, NY 10003, USA",Lower Manhattan
+60,40.726967,-73.985885,0,0,0,0,4,0,2,"88 E 7th St, New York, NY 10009, USA",Lower Manhattan
+61,40.72508,-73.981284,0,0,0,0,4,0,3,"182 E 7th St, New York, NY 10009, USA",Lower Manhattan
+62,40.723097,-73.976557,0,0,0,0,4,0,3,"280-298 E 7th St, New York, NY 10009, USA",Lower Manhattan
+63,40.721826,-73.972723,1,0,1,0,4,1,5,"East River Promenade, New York, NY 10002, USA",NA
+64,40.718915,-73.973527,1,0,1,0,4,1,5,"East River Promenade, New York, NY 10002, USA",NA
+65,40.720695,-73.978286,0,0,0,0,4,0,3,"326-398 E 3rd St, New York, NY 10009, USA",Alphabet City
+66,40.722706,-73.983045,0,0,0,0,4,0,2,"200-208 E 3rd St, New York, NY 10009, USA",East Village
+67,40.724582,-73.987498,0,0,0,0,4,0,2,"98 E 3rd St, New York, NY 10003, USA",East Village
+68,40.72639,-73.99176,0,0,0,0,4,0,2,"3 E 3rd St, New York, NY 10003, USA",East Village
+69,40.727918,-73.994796,0,0,0,0,4,0,2,"1 W 3rd St, New York, NY 10012, USA",Lower Manhattan
+70,40.729339,-73.997897,0,0,0,0,4,0,2,"566 LaGuardia Pl, New York, NY 10012, USA",Lower Manhattan
+71,40.73103,-74.00145,1,0,0,0,4,0,1,"304-318 6th Ave, New York, NY 10014, USA",Lower Manhattan
+72,40.732135,-74.003755,0,0,0,0,4,0,1,"74 7th Ave S, New York, NY 10014, USA",Lower Manhattan
+73,40.732942,-74.006876,0,0,0,0,4,0,2,"132-144 Christopher St, New York, NY 10014, USA",Lower Manhattan
+74,40.733612,-74.010521,1,0,1,0,4,1,4,"Hudson River Greenway, New York, NY 10014, USA",Lower Manhattan
+75,40.729158,-74.010937,1,0,1,0,4,1,4,"331-347 W Houston St, New York, NY 10014, USA",Lower Manhattan
+76,40.727974,-74.006067,0,0,0,0,4,0,3,"59-159 King St, New York, NY 10014, USA",Lower Manhattan
+77,40.726525,-74.002395,0,0,0,0,4,0,2,"189-191 Prince St, New York, NY 10012, USA",Lower Manhattan
+78,40.723898,-73.99696,0,0,0,0,4,0,1,"69 Prince St, New York, NY 10012, USA",Lower Manhattan
+79,40.722475,-73.99329,0,0,0,0,4,0,2,"232 Bowery, New York, NY 10012, USA",Lower Manhattan
+80,40.721566,-73.989087,0,0,0,0,4,0,1,"172-176 Allen St, New York, NY 10002, USA",Lower Manhattan
+81,40.720256,-73.98455,0,0,0,0,4,0,2,"163-167 Stanton St, New York, NY 10002, USA",Lower Manhattan
+82,40.718749,-73.979346,1,0,0,0,4,0,3,"100-110 Columbia St, New York, NY 10002, USA",Lower East Side
+83,40.717369,-73.974991,1,0,1,0,4,1,4,"E River Bikeway, New York, NY 10019, USA",Lower East Side
+84,40.712788,-73.975998,1,0,1,0,4,1,5,"East River Promenade, New York, NY 10002, USA",Lower East Side
+85,40.713967,-73.980008,0,0,0,0,4,0,4,"559 Grand St, New York, NY 10002, USA",Lower East Side
+86,40.715225,-73.984148,0,0,0,0,4,0,3,"464-466 Grand St, New York, NY 10002, USA",Lower East Side
+87,40.716667,-73.989009,0,0,0,0,4,0,3,"354-366 Grand St, New York, NY 10002, USA",Lower East Side
+88,40.718457,-73.994828,1,0,0,0,4,0,2,"122 Bowery, New York, NY 10013, USA",Lower Manhattan
+89,40.71936,-73.997336,0,0,0,0,4,0,3,"157 Mulberry St, New York, NY 10013, USA",Lower Manhattan
+90,40.720823,-74.000701,0,0,0,0,4,0,2,"459 Broadway, New York, NY 10013, USA",Lower Manhattan
+91,40.722406,-74.003865,0,0,0,0,4,0,3,"45 Grand St, New York, NY 10013, USA",Lower Manhattan
+92,40.723754,-74.006149,1,0,0,0,4,0,3,"71-77 Watts St, New York, NY 10013, USA",Lower Manhattan
+93,40.726454,-74.011331,1,0,1,0,4,1,5,"Hudson River Greenway, New York, NY 10014, USA",Lower Manhattan
+94,40.721851,-74.012482,1,0,1,0,4,1,5,"2 New York Plaza, New York, NY 10013, USA",NA
+95,40.717926,-74.007339,0,0,0,0,4,0,3,"170-176 W Broadway, New York, NY 10013, USA",Lower Manhattan
+96,40.715131,-74.002204,1,0,0,0,4,0,3,"67-73 Centre St, New York, NY 10013, USA",Lower Manhattan
+97,40.714556,-73.997146,1,0,0,0,4,0,2,"5 Bowery, New York, NY 10002, USA",Lower Manhattan
+98,40.713453,-73.990091,0,0,0,0,4,0,2,"1-17 Rutgers St, New York, NY 10002, USA",Lower Manhattan
+99,40.71029,-73.986237,1,0,1,0,4,1,4,"E River Bikeway, New York, NY 10002, USA",Lower East Side
+100,40.707446,-74.00094,1,0,1,0,4,1,4,"FDR Drive & S St Viaduct & Pearl St, New York, NY 10038, USA",Lower Manhattan
+101,40.708694,-74.005842,0,0,0,0,4,0,2,"40 Gold St, New York, NY 10038, USA",Lower Manhattan
+102,40.709893,-74.010002,0,0,0,0,4,0,1,"169 Broadway, New York, NY 10006, USA",Lower Manhattan
+103,40.711537,-74.015871,1,0,1,0,4,1,4,"393 South End Ave, New York, NY 10280, USA",Lower Manhattan
+104,40.708462,-74.017504,1,0,1,0,4,1,4,"71 South End Ave, New York, NY 10280, USA",Lower Manhattan
+105,40.704284,-74.01707,1,0,1,0,4,1,4,"New York Korean War Veterans Memorial, New York, NY 10004, USA",Lower Manhattan
+106,40.701285,-74.012503,1,0,1,0,4,1,3,"Shrine of St. Elizabeth Ann Bayley Seton, New York, NY 10004, USA",Lower Manhattan
+107,40.703065,-74.008445,1,0,1,0,4,1,4,"55 Water Street, New York, NY 10004, USA",Lower Manhattan
+108,40.706315,-74.009517,0,0,0,0,4,0,2,"42 William St, New York, NY 10005, USA",Lower Manhattan
+109,40.70852,-74.012633,0,0,0,0,4,0,3,"74 Trinity Pl, New York, NY 10006, USA",Lower Manhattan
+110,40.750237,-74.008655,1,0,1,0,2,1,5,"Hudson River Greenway, New York, NY 10011, USA",NA
+111,40.748355,-74.003693,0,0,0,0,2,0,3,"235 10th Ave, New York, NY 10011, USA",Midtown
+112,40.747168,-74.000839,0,0,0,0,2,0,2,"398 W 24th St, New York, NY 10011, USA",Midtown
+113,40.74477,-73.995174,0,0,0,0,2,0,2,"201 W 24th St, New York, NY 10011, USA",Midtown
+114,40.742331,-73.989018,1,1,0,1,1,1,2,"200 5th Ave, New York, NY 10010, USA",Midtown
+115,40.742276,-73.987216,1,0,0,1,1,1,2,"38 Madison Ave, New York, NY 10010, USA",Midtown
+116,40.739496,-73.982675,0,0,0,0,1,0,2,"198 E 24th St, New York, NY 10010, USA",Midtown
+117,40.735989,-73.975163,1,0,1,0,1,0,4,"2347-2385 FDR Drive, New York, NY 10010, USA",Midtown
+118,40.751816,-74.008197,1,0,1,0,2,1,4,"Hudson River Greenway, New York, NY 10011, USA",NA
+119,40.749839,-74.003374,1,0,0,0,2,1,1,"506 W 26th St, New York, NY 10001, USA",Midtown
+120,40.748427,-73.999997,0,0,0,0,2,0,2,"401-421 W 26th St, New York, NY 10001, USA",Midtown
+121,40.746001,-73.994276,0,0,0,0,2,0,1,"280 7th Ave, New York, NY 10001, USA",Midtown
+122,40.743451,-73.988238,1,0,0,0,1,1,2,"2-8 W 26th St, New York, NY 10010, USA",Midtown
+123,40.742768,-73.986594,1,0,0,0,1,1,2,"29 Madison Ave, New York, NY 10010, USA",Midtown
+124,40.739236,-73.978204,1,0,0,0,1,0,3,"Mt Carmel Pl, New York, NY 10016, USA",Midtown
+125,40.736619,-73.972732,0,0,1,0,1,1,5,"Waterside Plaza Access Rd, New York, NY 10016, USA",Midtown
+126,40.753207,-74.007679,1,0,1,0,2,1,5,"Hudson River Greenway, New York, NY 10011, USA",NA
+127,40.750822,-74.001896,1,0,0,0,2,0,3,"310 10th Ave, New York, NY 10001, USA",Midtown
+128,40.748433,-73.996207,0,0,0,0,2,0,2,"300-308 W 28th St, New York, NY 10001, USA",Midtown
+129,40.747267,-73.993385,0,0,0,0,2,0,1,"201-203 W 28th St, New York, NY 10001, USA",Midtown
+130,40.744678,-73.987312,0,0,0,0,1,0,1,"246 5th Ave, New York, NY 10001, USA",Midtown
+131,40.74265,-73.982463,0,0,0,0,1,0,2,"120 Lexington Ave, New York, NY 10016, USA",Midtown
+132,40.740451,-73.977281,1,0,0,0,1,0,2,"342 E 28th St, New York, NY 10016, USA",Midtown
+133,40.738878,-73.972721,0,0,1,0,1,0,4,"East River Esplanade, New York, NY 10010, USA",Midtown
+134,40.754622,-74.006983,0,0,1,0,2,0,5,"Hudson River Greenway, New York, NY 10011, USA",NA
+135,40.75207,-74.00105,0,0,0,0,2,0,4,"500 W 30th St, New York, NY 10001, USA",Midtown
+136,40.749664,-73.995305,0,0,0,0,2,0,2,"400 8th Ave, New York, NY 10001, USA",Midtown
+137,40.748473,-73.992467,0,0,0,0,2,0,1,"362 7th Ave, New York, NY 10001, USA",Midtown
+138,40.745917,-73.986389,0,0,0,0,1,0,2,"1 E 30th St, New York, NY 10016, USA",Midtown
+139,40.74165,-73.978176,1,0,0,0,1,0,2,"301 E 29th St, New York, NY 10016, USA",Midtown
+140,40.743869,-73.981566,0,0,0,0,1,0,2,"158 Lexington Ave, New York, NY 10016, USA",Midtown
+141,40.74004,-73.972482,0,0,1,0,1,0,5,"East River Esplanade, New York, NY 10010, USA",Kips Bay
+142,40.75704,-74.005307,0,0,1,0,2,0,5,"Hudson River Greenway, New York, NY, USA",NA
+143,40.755175,-74.000511,1,0,0,0,2,0,4,"553 W 34th St, New York, NY 10001, USA",Midtown
+144,40.753399,-73.996311,0,0,0,0,2,0,2,"398 W 34th St, New York, NY 10001, USA",Midtown
+145,40.751018,-73.990627,0,0,0,0,2,0,1,"469 7th Avenue, New York, NY 10018, USA",Midtown
+146,40.748462,-73.984561,0,0,0,0,1,0,1,"352-358 5th Ave, New York, NY 10001, USA",Midtown
+147,40.746387,-73.979744,0,0,0,0,1,0,2,"134 E 34th St, New York, NY 10016, USA",Midtown
+148,40.74379,-73.973519,1,0,0,0,1,0,3,"351-399 E 34th St, New York, NY 10016, USA",Midtown
+149,40.743229,-73.971843,0,0,1,0,1,0,4,"E River Esplanade, New York, NY 10016, USA",NA
+150,40.756593,-73.999926,1,0,0,0,2,0,4,"533 W 36th St, New York, NY 10018, USA",Midtown
+151,40.755878,-73.998231,0,0,0,0,2,0,3,"504 W 36th St, New York, NY 10018, USA",Midtown
+152,40.75348,-73.992545,0,0,0,0,2,0,1,"300 W 36th St, New York, NY 10018, USA",Midtown
+153,40.752285,-73.989734,0,0,0,0,2,0,1,"200 W 36th St, New York, NY 10018, USA",Midtown
+154,40.749749,-73.98364,0,0,0,0,1,0,1,"392 5th Ave, New York, NY 10018, USA",Midtown
+155,40.747717,-73.978812,0,0,0,0,1,0,3,"135 E 36th St, New York, NY 10016, USA",Midtown
+156,40.745791,-73.97436,1,0,0,1,1,0,3,"301-399 E 36th St, New York, NY 10016, USA",Midtown
+157,40.744444,-73.970777,1,0,1,0,1,0,5,"E River Esplanade, New York, NY 10016, USA",NA
+158,40.759527,-73.999286,0,0,0,0,2,0,4,"608 W 40th St, New York, NY 10018, USA",Midtown
+159,40.755927,-73.994522,0,0,0,0,2,0,2,"401 W 38th St, New York, NY 10018, USA",Hell's Kitchen
+160,40.754708,-73.991679,0,0,0,0,2,0,1,"300 W 38th St, New York, NY 10018, USA",Midtown
+161,40.753521,-73.988814,0,0,0,0,2,0,1,"200 W 38th St, New York, NY 10018, USA",Midtown
+162,40.750985,-73.982763,0,0,0,0,1,0,1,"1 W 38th St, New York, NY 10018, USA",Midtown
+163,40.748896,-73.977914,0,0,0,0,1,0,3,"310-312 Lexington Ave, New York, NY 10016, USA",Midtown
+164,40.747327,-73.974095,0,0,0,0,1,0,3,"242-298 E 38th St, New York, NY 10016, USA",Midtown
+165,40.746321,-73.971702,0,0,0,0,1,0,4,"333e E 38th St, New York, NY 10016, USA",Midtown
+166,40.758327,-73.996423,0,0,0,0,2,0,3,"503 W 40th St, New York, NY 10018, USA",Midtown
+167,40.757157,-73.993607,0,0,0,0,2,0,2,"400-402 W 40th St, New York, NY 10018, USA",Midtown
+168,40.756007,-73.990687,0,0,0,0,2,0,1,"619-623 8th Ave, New York, NY 10018, USA",Midtown
+169,40.754747,-73.987904,0,0,0,0,2,0,1,"558 Fashion Ave, New York, NY 10018, USA",Midtown
+170,40.753553,-73.985052,1,0,0,0,1,0,2,"100 W 40th St, New York, NY 10018, USA",Midtown
+171,40.750832,-73.978636,0,0,0,0,1,0,2,"98 E 40th St, New York, NY 10016, USA",Midtown
+172,40.749507,-73.975391,0,0,0,0,1,0,2,"199 E 40th St, New York, NY 10016, USA",Midtown
+173,40.748101,-73.970155,1,0,1,0,1,0,4,"370-398 E 41st St, New York, NY 10017, USA",Midtown
+174,40.762126,-74.001488,0,0,1,0,2,0,5,"2005 Hudson River Greenway, New York, NY 10036, USA",Midtown
+175,40.759667,-73.995436,0,0,0,0,2,0,3,"576 10th Ave, New York, NY 10036, USA",Hell's Kitchen
+176,40.757242,-73.989782,0,0,0,0,2,0,1,"660 8th Ave, New York, NY 10036, USA",Midtown
+177,40.756039,-73.98696,0,0,0,0,2,0,1,"200 W 42nd St, New York, NY 10036, USA",Midtown
+178,40.754848,-73.98415,1,0,0,1,1,0,2,"100 W 42nd St, New York, NY 10036, USA",Midtown
+179,40.751512,-73.976177,0,0,0,0,1,0,1,"105 E 42nd St, New York, NY 10017, USA",Midtown
+180,40.749854,-73.972207,0,0,0,0,1,0,3,"785 2nd Ave, New York, NY 10017, USA",Midtown
+181,40.748707,-73.969715,1,0,1,1,1,0,4,"41-89 E 42nd St, New York, NY 10017, USA",Midtown
+182,40.76337,-73.999905,1,1,1,0,2,0,5,"2005 Hudson River Greenway, New York, NY 10036, USA",Midtown
+183,40.760924,-73.994535,0,0,0,0,2,0,3,"501 W 44th St, New York, NY 10036, USA",Midtown
+184,40.759738,-73.991687,0,0,0,0,2,0,2,"622 9th Ave, New York, NY 10036, USA",Midtown
+185,40.757357,-73.986022,0,0,0,0,2,0,1,"199 W 44th St, New York, NY 10036, USA",Midtown
+186,40.756167,-73.983164,0,0,0,0,1,0,1,"1139 6th Ave, New York, NY 10036, USA",Midtown
+187,40.754111,-73.978376,0,0,0,0,1,0,2,"30 E 44th St, New York, NY 10017, USA",Midtown
+188,40.752713,-73.975157,0,0,0,0,1,0,2,"420-436 Lexington Ave, New York, NY 10170, USA",Midtown East
+189,40.75112,-73.971262,0,0,0,0,1,0,2,"279 E 44th St, New York, NY 10017, USA",Midtown
+190,40.764397,-73.998914,0,0,1,0,2,0,3,"Hudson River Greenway, New York, NY 10036, USA",Midtown
+191,40.762828,-73.993146,1,0,0,0,2,0,3,"670 10th Ave, New York, NY 10036, USA",Hell's Kitchen
+192,40.761,-73.99084,0,0,0,0,2,0,2,"400-402 W 46th St, New York, NY 10036, USA",Midtown
+193,40.758603,-73.985068,0,0,0,0,2,0,1,"7th Ave, New York, NY 10036, USA",Midtown
+194,40.756054,-73.979076,0,0,0,0,1,0,1,"2 W 46th St, New York, NY 10036, USA",Midtown
+195,40.75403,-73.974184,0,0,0,0,1,0,3,"476 Lexington Ave, New York, NY 10017, USA",Midtown East
+196,40.753336,-73.972623,0,0,0,0,1,0,2,"182-198 E 46th St, New York, NY 10017, USA",Midtown
+197,40.751377,-73.96802,0,0,0,0,1,0,4,"344-398 E 46th St, New York, NY 10017, USA",Midtown
+198,40.763412,-73.992708,1,0,0,0,2,0,3,"684 10th Ave, New York, NY 10036, USA",Hell's Kitchen
+199,40.767159,-73.993749,1,0,0,0,2,0,3,"601 W 52nd St, New York, NY 10019, USA",Midtown
+200,40.767246,-73.986227,1,0,0,0,2,0,2,"400 W 56th St, New York, NY 10019, USA",Midtown
+201,40.76794,-73.985755,1,0,0,0,2,0,2,"400 W 57th St, New York, NY 10019, USA",Midtown
+202,40.753749,-73.963925,1,0,1,0,1,0,4,"E 51st Street Pedestrian Crossing, New York, NY 10022, USA",NA
+203,40.754871,-73.962622,1,0,1,0,1,0,3,"57-69 Sutton Pl S, New York, NY 10022, USA",Midtown
+204,40.758976,-73.970601,0,0,0,0,1,0,2,"630-634 Lexington Ave, New York, NY 10022, USA",Midtown East
+205,40.757361,-73.960656,0,0,1,0,1,0,3,"1 Sutton Pl, New York, NY 10022, USA",Midtown
+206,40.770542,-73.995076,1,0,1,0,2,0,5,"Hudson River Greenway, New York, NY 10019, USA",Midtown
+207,40.772977,-73.993773,0,0,1,0,2,0,5,"Hudson River Greenway, New York, NY 10019, USA",Midtown
+208,40.760428,-73.975858,0,0,0,0,1,0,2,"2 W 53rd St, New York, NY 10019, USA",Midtown
+209,40.758413,-73.959115,0,0,1,0,1,0,4,"507-599 E 59th St, New York, NY 10022, USA",Sutton Place
+210,40.763627,-73.971444,0,0,0,0,3,0,2,"27 E 59th St, New York, NY 10022, USA",Midtown
+211,40.761571,-73.966615,0,0,0,0,3,0,1,"199 E 59th St, New York, NY 10022, USA",Midtown
+212,40.758671,-73.959691,0,0,0,0,3,0,4,"1101 York Ave, New York, NY 10065, USA",NA
+213,40.766711,-73.969138,0,0,0,0,3,0,3,"734 Madison Ave, New York, NY 10065, USA",Upper East Side
+214,40.764704,-73.964391,0,0,0,0,3,0,2,"186 E 64th St, New York, NY 10065, USA",Upper East Side
+215,40.764647,-73.958383,1,0,0,0,3,0,3,"350 E 67th St, New York, NY 10065, USA",Upper East Side
+216,40.769126,-73.965149,0,0,0,0,3,0,3,"98 E 69th St, New York, NY 10021, USA",Upper East Side
+217,40.764323,-73.955638,0,0,0,0,3,0,3,"449 E 68th St, New York, NY 10065, USA",Upper East Side
+218,40.765192,-73.951789,0,0,1,0,3,1,4,"John Finley Walk, New York, NY 10021, USA",NA
+219,40.773087,-73.964559,0,0,0,0,3,0,3,"926-936 Madison Ave, New York, NY 10021, USA",Upper East Side
+220,40.770152,-73.957472,0,0,0,0,3,0,2,"255-299 E 74th St, New York, NY 10021, USA",Upper East Side
+221,40.76711,-73.950224,0,0,0,0,3,0,5,"74 John Finley Walk, New York, NY 10021, USA",Upper East Side
+222,40.768821,-73.950313,1,0,0,0,3,0,3,"Cherokee Pl, New York, NY 10075, USA",Upper East Side
+223,40.775742,-73.960691,0,0,0,0,3,0,3,"79-99 E 79th St, New York, NY 10075, USA",Upper East Side
+224,40.772355,-73.952686,0,0,0,0,3,0,2,"1513 1st Avenue, New York, NY 10075, USA",Yorkville
+225,40.777515,-73.954938,0,0,0,0,3,0,2,"1490 3rd Ave, New York, NY 10028, USA",Upper East Side
+226,40.773092,-73.944484,1,1,1,1,3,1,4,"10 Gracie Square, New York, NY 10028, USA",Upper East Side
+227,40.774952,-73.944792,1,1,0,1,3,1,4,"599 E 86th St, New York, NY 10028, USA",Upper East Side
+228,40.782069,-73.955693,0,0,0,0,3,0,3,"101 E 89th St, New York, NY 10128, USA",Carnegie Hill
+229,40.780428,-73.949878,1,0,0,0,3,0,2,"302 E 90th St, New York, NY 10128, USA",Upper East Side
+230,40.777191,-73.942488,1,1,1,1,3,1,5,"90 John Finley Walk, New York, NY 10028, USA",Upper East Side
+231,40.785931,-73.95513,0,0,0,0,3,0,3,"27 E 94th St, New York, NY 10128, USA",Upper East Side
+232,40.785208,-73.951429,1,0,0,1,3,0,3,"1471 Lexington Ave, New York, NY 10128, USA",Upper East Side
+233,40.782583,-73.945221,1,0,0,0,3,0,3,"399 E 95th St, New York, NY 10128, USA",Yorkville
+234,40.789198,-73.952763,0,0,0,0,3,0,3,"1440 Madison Ave, New York, NY 10029, USA",East Harlem
+235,40.787143,-73.947931,1,0,0,1,3,0,3,"199 E 99th St, New York, NY 10029, USA",Upper Manhattan
+236,40.786309,-73.939044,1,0,1,0,3,1,5,"455 Ward's Island Bridge, New York, NY 10029, USA",Upper Manhattan
+237,40.791583,-73.94681,1,0,0,1,3,0,2,"142 E 105th St, New York, NY 10029, USA",Upper Manhattan
+238,40.793606,-73.949497,0,0,0,0,3,0,3,"1569 Madison Ave, New York, NY 10029, USA",East Harlem
+239,40.792872,-73.943721,1,0,0,1,3,0,2,"1965 3rd Ave, New York, NY 10029, USA",East Harlem
+240,40.788714,-73.937873,1,0,1,0,3,1,4,"421 E 106th St, New York, NY 10029, USA",Upper Manhattan
+241,40.792828,-73.937743,1,0,1,1,3,1,3,"335 E 111th St, New York, NY 10029, USA",Upper Manhattan
+242,40.791747,-73.935114,1,0,1,1,3,1,4,"E 111th Street Pedestrian Bridge, New York, NY 10029, USA",NA
+243,40.788315,-73.941017,0,0,0,0,3,0,2,"2006-2016 1st Avenue, New York, NY 10029, USA",East Harlem
+244,40.794209,-73.944853,0,0,0,0,3,0,2,"1759 Lexington Ave, New York, NY 10029, USA",East Harlem
+245,40.764919,-73.972546,1,0,0,0,3,0,2,"1 E 60th St, New York, NY 10022, USA",Upper East Side
+246,40.769112,-73.969517,1,0,0,0,3,0,4,"855 5th Ave, New York, NY 10065, USA",Upper East Side
+247,40.772451,-73.967024,1,0,0,0,3,0,4,"2 E 72nd St, New York, NY 10021, USA",Upper East Side
+248,40.780185,-73.961392,1,0,0,1,3,0,4,"1029 5th Ave, New York, NY 10028, USA",Upper East Side
+249,40.787887,-73.955795,1,0,0,0,3,0,4,"1145 5th Ave, New York, NY 10128, USA",Upper East Side
+250,40.796626,-73.94946,1,0,0,0,3,0,3,"1280 Duke Ellington Circle, New York, NY 10029, USA",East Harlem
+251,40.799417,-73.955422,1,0,0,0,3,0,3,"1801 7th Ave, New York, NY 10026, USA",Upper Manhattan
+252,40.79418,-73.962812,1,0,0,1,3,0,3,"400 W 100th St, New York, NY 10025, USA",Upper West Side
+253,40.787862,-73.967439,1,0,0,0,3,0,4,"2 W 90th St, New York, NY 10024, USA",Upper West Side
+254,40.776209,-73.975915,1,0,0,0,3,0,4,"Terrace Dr, New York, NY 10023, USA",Central Park
+255,40.768567,-73.981483,1,0,0,1,3,0,2,"1 Central Park West, New York, NY 10023, USA",Upper West Side
+256,40.76802,-73.977548,1,0,0,1,3,0,5,"Central Park Driveway, New York, NY 10019, USA",Central Park
+257,40.767095,-73.97343,1,0,1,0,3,0,5,"Gapstow Bridge, New York, NY 10019, USA",Central Park
+258,40.774592,-73.972864,1,0,1,1,3,0,5,"Terrace Dr, New York, NY 10023, USA",Central Park
+259,40.774831,-73.966727,1,0,1,0,3,0,5,"East Dr, New York, NY 10024, USA",Central Park
+260,40.781054,-73.970467,1,0,0,0,3,0,4,"Bridle Path, New York, NY 10024, USA",Central Park
+261,40.781351,-73.963576,1,0,0,1,3,1,4,"East Dr, New York, NY 10028, USA",Central Park
+262,40.785072,-73.966652,1,0,1,1,3,1,5,"Shuman Running Track, New York, NY 10128, USA",Central Park
+263,40.784382,-73.959283,1,0,1,1,3,1,4,"2 E 90th St, New York, NY 10128, USA",Upper East Side
+264,40.78868,-73.961918,1,0,1,0,3,1,5,"Shuman Running Track, New York, NY 10128, USA",Central Park
+265,40.794296,-73.954786,1,0,0,0,3,1,5,"East Dr, New York, NY 10029, USA",Central Park
+266,40.79659,-73.958435,1,0,0,0,3,1,5,"Great Hill, New York, NY 10025, USA",Central Park
+267,40.794672,-73.952254,1,0,1,0,3,1,4,"1240-1242 5th Ave, New York, NY 10029, USA",Upper Manhattan
+268,40.78041,-73.985727,1,0,0,0,3,0,3,"1 Riverside Dr, New York, NY 10023, USA",Upper West Side
+269,40.785662,-73.985202,1,0,0,0,3,1,5,"79 Hudson River Greenway, New York, NY 10024, USA",NA
+270,40.794884,-73.978732,1,0,1,1,3,1,5,"Hudson River Greenway, New York, NY 10025, USA",Upper West Side
+271,40.794848,-73.978771,1,0,1,0,3,1,5,"Hudson River Greenway, New York, NY 10024, USA",Upper West Side
+272,40.799456,-73.975388,1,0,1,0,3,1,5,"Hudson River Greenway, New York, NY 10025, USA",Upper West Side
+273,40.817998,-73.961828,1,0,1,1,3,1,5,"Hudson River Greenway & NY-9A & Henry Hudson Pkwy, New York, NY 10027, USA",NA
+274,40.791763,-73.978641,1,0,1,0,3,0,4,"173 Riverside Dr, New York, NY 10024, USA",Upper West Side
+275,40.80104,-73.971402,1,0,0,1,3,0,4,"318 Riverside Dr, New York, NY 10025, USA",Upper West Side
+276,40.77414,-73.988701,1,0,0,0,3,0,3,"75 W 63rd St, New York, NY 10023, USA",Lincoln Square
+277,40.774185,-73.984827,0,0,0,0,3,0,3,"127 Amsterdam Ave, New York, NY 10023, USA",Upper West Side
+278,40.773581,-73.981572,1,0,0,0,3,0,2,"135 Columbus Ave, New York, NY 10023, USA",Upper West Side
+279,40.771742,-73.982924,1,0,0,0,3,0,2,"78 Columbus Ave, New York, NY 10023, USA",Upper West Side
+280,40.77959,-73.981819,1,0,0,0,3,0,2,"212 W 73rd St, New York, NY 10023, USA",Upper West Side
+281,40.778771,-73.97781,0,0,0,0,3,0,3,"300 Columbus Ave, New York, NY 10023, USA",Upper West Side
+282,40.78185,-73.979269,0,0,0,0,3,0,3,"359 Amsterdam Ave, New York, NY 10024, USA",Upper West Side
+283,40.785139,-73.978923,0,0,0,0,3,0,2,"2262 Broadway, New York, NY 10024, USA",Upper West Side
+284,40.785797,-73.972754,0,0,0,0,3,0,3,"518 Columbus Ave, New York, NY 10024, USA",Upper West Side
+285,40.790316,-73.969399,0,0,0,1,3,0,3,"101 W 92nd St, New York, NY 10025, USA",Upper West Side
+286,40.794049,-73.970396,0,0,0,0,3,0,2,"734 Amsterdam Ave, New York, NY 10025, USA",Upper West Side
+287,40.796609,-73.968491,1,0,0,1,3,0,2,"819 Amsterdam Ave, New York, NY 10025, USA",Upper West Side
+288,40.800451,-73.965706,0,0,0,0,3,0,3,"937 Amsterdam Ave, New York, NY 10025, USA",Upper West Side
+289,40.79995,-73.96055,0,0,0,0,3,0,3,"181 Manhattan Ave, New York, NY 10025, USA",Upper West Side
+290,40.803527,-73.967057,0,0,0,0,3,0,2,"298 W 109th St, New York, NY 10025, USA",Upper West Side
+291,40.875816,-73.927506,1,1,1,0,3,0,5,"NY-9A, New York, NY 10034, USA",Upper Manhattan
+292,40.869261,-73.931583,1,1,1,0,3,0,5,"348 Dyckman St, New York, NY 10034, USA",Upper Manhattan
+293,40.866833,-73.928707,1,1,1,0,3,0,3,"22-194 Payson Ave, New York, NY 10034, USA",Upper Manhattan
+294,40.868397,-73.919219,1,1,0,0,3,0,3,"4972 Broadway, New York, NY 10034, USA",Upper Manhattan
+295,40.872466,-73.912894,1,1,1,0,3,0,4,"W 220th St, New York, NY 10034, USA",Upper Manhattan
+296,40.864631,-73.918915,0,0,0,0,3,0,2,"3874-3878 10th Ave, New York, NY 10034, USA",Upper Manhattan
+297,40.859059,-73.923047,0,0,0,0,3,0,4,"25-45 Dyckman St, New York, NY 10040, USA",Upper Manhattan
+298,40.86305,-73.933479,1,1,1,1,3,1,5,"NY-9A & Henry Hudson Pkwy, New York, NY 10040, USA",Upper Manhattan
+299,40.864637,-73.928897,1,1,1,0,3,0,3,"102 Arden St, New York, NY 10040, USA",Upper Manhattan
+300,40.859372,-73.931369,1,1,1,0,3,0,3,"391-399 Bennett Ave, New York, NY 10040, USA",Upper Manhattan
+301,40.859106,-73.934263,1,1,1,1,3,1,4,"730 Fort Washington Ave, New York, NY 10040, USA",Upper Manhattan
+302,40.861123,-73.935211,1,1,1,1,3,1,5,"Hudson River Greenway, New York, NY, USA",Upper Manhattan
+303,40.858119,-73.937501,1,1,1,0,3,0,4,"Hudson River Greenway, New York, NY, USA",Upper Manhattan
+304,40.85254,-73.941616,1,1,1,0,3,0,4,"Hudson River Greenway, New York, NY, USA",Upper Manhattan
+305,40.853558,-73.938363,1,1,0,1,3,1,3,"161 Pinehurst Ave, New York, NY 10033, USA",Upper Manhattan
+306,40.852173,-73.937846,1,1,0,0,3,0,3,"501-521 Fort Washington Ave, New York, NY 10033, USA",Upper Manhattan
+307,40.85069,-73.94381,1,1,1,1,3,1,5,"5365 Hudson River Greenway, New York, NY 10033, USA",Upper Manhattan
+308,40.849539,-73.946375,1,1,1,0,3,0,5,"5365 Hudson River Greenway, New York, NY 10033, USA",Upper Manhattan
+309,40.848521,-73.930619,1,1,0,1,3,1,3,"2446-2450 Amsterdam Ave, New York, NY 10033, USA",Upper Manhattan
+310,40.841255,-73.947549,1,1,1,0,3,0,5,"Hudson River Greenway, New York, NY 10032, USA",NA
+311,40.836739,-73.949255,1,1,1,0,3,0,4,"Hudson River Greenway, New York, NY 10032, USA",NA
+312,40.852363,-73.931574,0,0,0,0,3,0,2,"1517 St Nicholas Ave, New York, NY 10033, USA",Fort George
+313,40.849327,-73.933883,0,0,0,0,3,0,2,"600 W 181st St, New York, NY 10033, USA",Upper Manhattan
+314,40.846995,-73.938282,0,0,0,0,3,0,2,"4169 Broadway, New York, NY 10033, USA",Upper Manhattan
+315,40.842315,-73.938954,0,0,0,0,3,0,2,"620 W 170th St, New York, NY 10032, USA",Upper Manhattan
+316,40.838019,-73.938356,0,0,0,0,3,0,3,"501 W 165th St, New York, NY 10032, USA",Upper Manhattan
+317,40.834742,-73.94447,0,0,0,0,3,0,2,"3801 Broadway, New York, NY 10032, USA",Upper Manhattan
+318,40.861602,-73.924797,1,0,0,0,3,0,2,"168 Nagle Ave, New York, NY 10040, USA",Fort George
+319,40.853938,-73.923722,1,1,1,0,3,0,5,"Harlem River Dr, New York, NY 10034, USA",Upper Manhattan
+320,40.852903,-73.926116,1,1,1,1,3,1,4,"Harlem River Dr, New York, NY 10040, USA",Upper Manhattan
+321,40.847004,-73.92901,1,1,1,0,3,0,5,"297 Washington Bridge, New York, NY 10040, USA",Upper Manhattan
+322,40.848169,-73.930955,1,1,0,0,3,0,3,"503 W 181st St, New York, NY 10033, USA",Upper Manhattan
+323,40.845661,-73.93147,1,1,0,0,3,0,4,"Trans-Manhattan Expy & Amsterdam Ave & W 175th St, New York, NY 10033, USA",Upper Manhattan
+324,40.844259,-73.933709,1,1,0,0,3,0,3,"2318 Amsterdam Ave, New York, NY 10033, USA",Upper Manhattan
+325,40.84626,-73.942598,1,1,0,0,3,0,4,"738 W 173rd St, New York, NY 10032, USA",Upper Manhattan
+326,40.847708,-73.942186,1,1,0,0,3,0,4,"899 W 176th St, New York, NY 10033, USA",Upper Manhattan
+327,40.847227,-73.939799,1,1,0,0,3,0,3,"800 W 176th St, New York, NY 10033, USA",Upper Manhattan
+328,40.845399,-73.940575,1,1,0,0,3,0,3,"701-799 W 173rd St, New York, NY 10033, USA",Upper Manhattan
+329,40.837107,-73.936746,1,1,0,0,3,0,3,"623 Edgecombe Ave, New York, NY 10032, USA",Upper Manhattan
+330,40.830423,-73.940178,1,1,0,0,3,0,3,"400 W 155th St, New York, NY 10032, USA",Upper Manhattan
+331,40.829233,-73.937242,1,1,0,0,3,0,2,"2928-2930 Frederick Douglass Blvd, New York, NY 10039, USA",Upper Manhattan
+332,40.828226,-73.934967,1,1,1,0,3,0,4,"213 W 155th St, New York, NY 10039, USA",Upper Manhattan
+333,40.854959,-73.93603,0,0,0,0,3,0,3,"61 Overlook Terrace, New York, NY 10033, USA",Upper Manhattan
+334,40.831563,-73.94691,1,1,0,1,5,1,3,"601-699 W 153rd St, New York, NY 10032, USA",Upper Manhattan
+335,40.83041,-73.944024,1,1,0,1,5,1,2,"501 W 153rd St, New York, NY 10031, USA",Upper Manhattan
+336,40.828301,-73.939209,1,1,0,0,5,0,3,"310 W 153rd St, New York, NY 10039, USA",Upper Manhattan
+337,40.827794,-73.945811,0,0,0,0,5,0,2,"500-502 W 149th St, New York, NY 10031, USA",Upper Manhattan
+338,40.827205,-73.950036,0,0,0,0,5,0,2,"3565 Broadway, New York, NY 10031, USA",Upper Manhattan
+339,40.827121,-73.952037,1,1,0,0,5,0,3,"620 W 145th St, New York, NY 10031, USA",Upper Manhattan
+340,40.815834,-73.958467,0,0,0,0,5,0,2,"600 W 125th St, New York, NY 10027, USA",Upper Manhattan
+341,40.814218,-73.950871,1,1,0,1,5,1,3,"61-69 St Nicholas Terrace, New York, NY 10027, USA",Upper Manhattan
+342,40.820902,-73.950972,0,0,0,0,5,0,3,"501 W 138th St, New York, NY 10031, USA",Upper Manhattan
+343,40.827013,-73.955065,1,1,1,0,5,0,5,"750 W 145th St, New York, NY 10031, USA",Upper Manhattan
+344,40.826895,-73.941575,1,1,0,0,5,0,3,"400 W 150th St, New York, NY 10031, USA",Upper Manhattan
+345,40.823699,-73.94394,1,1,0,1,5,1,2,"340 W 145th St, New York, NY 10039, USA",Upper Manhattan
+346,40.823315,-73.942842,1,1,0,0,5,0,2,"68 Bradhurst Ave, New York, NY 10039, USA",Upper Manhattan
+347,40.827598,-73.935239,0,0,1,0,5,0,4,"2653 Adam Clayton Powell Jr Blvd, New York, NY 10039, USA",Upper Manhattan
+348,40.821717,-73.939125,0,0,0,0,5,0,2,"2500 Adam Clayton Powell Jr Blvd, New York, NY 10039, USA",Upper Manhattan
+349,40.821414,-73.94608,0,0,0,0,5,0,3,"627-629 St Nicholas Ave, New York, NY 10031, USA",Upper Manhattan
+350,40.817045,-73.947835,0,0,0,0,5,0,3,"W 135th St, New York, NY 10030, USA",Upper Manhattan
+351,40.817305,-73.942341,0,0,0,0,5,0,2,"2364 Adam Clayton Powell Jr Blvd, New York, NY 10030, USA",Upper Manhattan
+352,40.813797,-73.941054,0,0,0,0,5,0,2,"492 Lenox Ave, New York, NY 10037, USA",Upper Manhattan
+353,40.815356,-73.935818,0,1,1,0,5,0,3,"2-8 W 139th St, New York, NY 10037, USA",Upper Manhattan
+354,40.810224,-73.937449,0,0,0,0,5,0,2,"1-49 E 132nd St, New York, NY 10037, USA",Upper Manhattan
+355,40.811199,-73.946633,0,0,0,0,5,0,2,"2169 Adam Clayton Powell Jr Blvd, New York, NY 10027, USA",Upper Manhattan
+356,40.812693,-73.950839,0,0,0,0,5,0,2,"359-371 St Nicholas Ave, New York, NY 10027, USA",Upper Manhattan
+357,40.813441,-73.945353,0,0,0,0,5,0,3,"200-202 W 132nd St, New York, NY 10027, USA",Upper Manhattan
+358,40.809252,-73.948535,0,0,0,0,5,0,2,"2104 Adam Clayton Powell Jr Blvd, New York, NY 10027, USA",Upper Manhattan
+359,40.803387,-73.952548,0,0,0,0,5,0,2,"Graham Court, New York, NY 10026, USA",Upper Manhattan
+360,40.800663,-73.946598,0,0,0,0,5,0,2,"2-18 W 116th St, New York, NY 10026, USA",Upper Manhattan
+361,40.80444,-73.939869,0,0,0,0,5,0,2,"40-98 E 124th St, New York, NY 10035, USA",Upper Manhattan
+362,40.802132,-73.934106,0,0,0,0,5,0,3,"247 E 124th St, New York, NY 10035, USA",Upper Manhattan
+363,40.797072,-73.937803,0,0,0,0,5,0,2,"249-299 E 116th St, New York, NY 10029, USA",Upper Manhattan
+364,40.799979,-73.944914,0,0,0,0,5,0,3,"1766 Madison Ave, New York, NY 10029, USA",East Harlem
+365,40.796264,-73.945768,0,0,0,0,5,0,3,"93 E 111th St, New York, NY 10029, USA",Upper Manhattan
+366,40.795112,-73.933176,0,0,0,0,5,0,3,"301-307 Pleasant Ave, New York, NY 10035, USA",Upper Manhattan
+367,40.81583,-73.958412,0,0,0,0,3,0,2,"600 W 125th St, New York, NY 10027, USA",Upper Manhattan
+368,40.814198,-73.960694,0,0,0,0,3,0,3,"175 Claremont Ave, New York, NY 10027, USA",Upper Manhattan
+369,40.811311,-73.957878,0,0,0,0,3,0,3,"501 W 123rd St, New York, NY 10027, USA",Upper Manhattan
+370,40.808024,-73.963902,0,0,0,0,3,0,3,"604 W 116th St, New York, NY 10027, USA",Upper Manhattan
+371,40.808838,-73.96594,1,1,0,0,3,0,4,"435 Riverside Dr, New York, NY 10025, USA",Upper Manhattan
+372,40.806995,-73.967469,1,1,0,0,3,0,4,"6398 Riverside Dr, New York, NY 10025, USA",Upper Manhattan
+373,40.804895,-73.968715,1,1,0,0,3,0,3,"375 Riverside Dr, New York, NY 10025, USA",Upper West Side
+374,40.806842,-73.961153,0,0,0,0,3,0,3,"500 W 116th St, New York, NY 10027, USA",Upper Manhattan
+375,40.812419,-73.964014,1,1,0,1,3,1,4,"478 Riverside Dr, New York, NY 10027, USA",Upper Manhattan
+376,40.816229,-73.962031,1,1,0,0,3,0,4,"548 Riverside Dr, New York, NY 10027, USA",Upper Manhattan
+377,40.813751,-73.962313,1,1,0,0,3,0,4,"500 Riverside Dr, New York, NY 10027, USA",Upper Manhattan
+378,40.817193,-73.962735,1,1,1,0,3,0,5,"16 Hudson River Greenway, New York, NY 10027, USA",Upper Manhattan
+379,40.816002,-73.963838,1,1,1,0,3,0,5,"16 Hudson River Greenway, New York, NY 10027, USA",Upper Manhattan
+380,40.818075,-73.961833,1,1,1,0,3,0,5,"Hudson River Greenway, New York, NY 10027, USA",NA
+381,40.817512,-73.960723,1,1,0,0,3,0,4,"59-67 St Clair Pl, New York, NY 10027, USA",Upper Manhattan
+382,40.814229,-73.964232,1,1,0,0,3,0,5,"NY-9A, New York, NY 10027, USA",Upper Manhattan
+383,40.807938,-73.968414,1,1,0,0,3,0,5,"NY-9A, New York, NY, USA",NA
+384,40.805323,-73.969486,1,1,0,0,3,0,4,"375 Riverside Dr, New York, NY 10025, USA",Upper West Side
+385,40.80579,-73.968419,1,1,0,0,3,0,4,"W 110th St, New York, NY 10025, USA",Upper Manhattan
+386,40.810625,-73.958331,0,0,0,0,3,0,3,"500 W 122nd St, New York, NY 10027, USA",Upper Manhattan
+387,40.806803,-73.961063,0,0,0,0,3,0,3,"1135 Amsterdam Ave, New York, NY 10025, USA",Upper Manhattan
+388,40.804234,-73.962967,0,0,0,0,3,0,3,"1050 Amsterdam Ave, New York, NY 10025, USA",Upper Manhattan
+389,40.804829,-73.966155,0,0,0,0,3,0,2,"599 W 111th St, New York, NY 10025, USA",Upper Manhattan
+390,40.811378,-73.964853,0,1,1,0,3,0,4,"475 Riverside Dr, New York, NY 10027, USA",Upper Manhattan
