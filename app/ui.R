@@ -2,6 +2,15 @@ library(shiny)
 library(shinydashboard)
 library(leaflet)
 library(osrm)
+#drop-downs
+SafetyLevel <- c("Very Important to me!", 
+                 "Let it be okay",
+                 "Not Care at all" 
+)
+AirQuality <- c("Very Important to me!", 
+                "Let it be okay",
+                "Not Care at all" 
+)
 
 dashboardPage(
   
@@ -9,8 +18,6 @@ dashboardPage(
   dashboardHeader(title = 'How New York Runs',
                   titleWidth = 300
   ),
-  
-  
   
   dashboardSidebar(
     
@@ -68,23 +75,32 @@ dashboardPage(
                          tags$style(type='text/css', "#submit{height: 40px; width:62%; font-size: 16px}"),
                          tags$br()
                 ),
-                menuItem('Running Map Overview', tabName = 'runmap', icon = shiny::icon('map-pin'))
+                menuItem("Running Map", tabName = "mapping", icon = icon("map")
+                         ,checkboxInput("park", "GO Park", width = "90%", value = TRUE)
+                         ,checkboxInput("riverside","Go Riverside & Pool", width = "90%")
+                         ,checkboxInput("dog", "Dog Friendly",width = "90%", value = TRUE)
+                         ,checkboxInput("drinkingfountain","Drinking Fountain", width = "90%")
+                         ,selectInput("safety","Safety",SafetyLevel, selected = "Let it be okay")
+                         ,selectInput("airquality", "Air Quality", AirQuality)
+                )
     )
-    
-    
     
     
     ),
   
   dashboardBody(
-    
-    tabItem(tabName = 'routeplan',
-            leafletOutput('map', width = '100%', height = 1000)
-            
-    ),
-    
-    tabItem(tabName = 'runmap')
-    
-    
-  )
+    tabItems (
+              tabItem(tabName='routeplan',
+                      h2("Map 1")),
+              tabItem(tabName='mapping',
+                      h2("Shujin map"))
     )
+    #tabItem(tabName = 'routeplan',
+            #leafletOutput('map', width = '100%', height = 1000)
+            
+    #),
+    
+    #tabItem(tabName = "mapping",
+            #leafletOutput("map2",height = 800))
+  )
+)

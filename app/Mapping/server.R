@@ -6,8 +6,8 @@ library(ggplot2)
 library(maps)
 library(mapdata)
 
-
-#run <- read.csv("map_point_withAddress.csv")
+#read the data first, than comment on the code command
+#run <- read.csv("map_point_withAddress_rescaleAQI.csv")
 
 
 shinyServer(function(input,output){
@@ -45,102 +45,121 @@ shinyServer(function(input,output){
   #set preference for runing environment
   
   
-  # preference <-  reactive({
-  #   rrr <- run
-  #   if(input$park == TRUE){
-  #     rrr = filter(rrr, Park == 1)
-  #   }
-  #   if(input$riverside == TRUE){
-  #     rrr = filter(rrr, Riverside == 1)
-  #   }
-  #   if(input$dog == TRUE){
-  #     rrr = filter(rrr, Dog == "1")
-  #   }
-  #   if(input$drinkingfountain ==TRUE){
-  #     rrr = filter(rrr, DrinkingFountain == "1")
-  #   }
-  #   
-  #   if(input$safety == "Very Important to me!"){
-  #     rrr = filter(rrr, Safety == "5")
-  #   }
-  #   if(input$safety == "Let it be okay"){
-  #     rrr = filter(rrr, Safety == "3" | Safety == "4")
-  #   }
-  #   if(input$safety == "Not Care at all"){
-  #     rrr = rrr
-  #   }
-  #   if(input$airquality == "Very Important to me!"){
-  #     rrr = filter(rrr, Airquality == "5")
-  #   }
-  #   if(input$airquality == "Let it be okay"){
-  #     rrr = filter(rrr, Airquality == "3" | airquality == "4")
-  #   }
-  #   if(input$airquality == "Not Care at all"){
-  #     rrr = rrr
-  #   }
-  #   return(rrr)
-  #   
-  # })
-  
-  
   preference <-  reactive({
     rrr <- run
-    if(input$park == TRUE){
+    if(input$park2 == TRUE){
       rrr = filter(rrr, Park == 1)
     }
-    else if (input$park ==FALSE){
+    if(input$park2 == FALSE){
       rrr = filter(rrr,Park == 3)
     }
-      
-    # if(input$safety == "Very Important to me!"){
-    #   rrr = filter(rrr, Safety == "5")
-    # }
-    # if(input$safety == "Let it be okay"){
-    #   rrr = filter(rrr, Safety >= 3) 
-    # }
-    # if(input$safety == "Not Care at all"){
-    #   rrr = rrr
-    # }
-    # if(input$airquality == "Very Important to me!"){
-    #   rrr = filter(rrr, Airquality == "5")
-    # }
-    # if(input$airquality == "Let it be okay"){
-    #   rrr = filter(rrr, Airquality >= 3)
-    # }
-    # if(input$airquality == "Not Care at all"){
-    #   rrr = rrr
-    # }
-    
+    if(input$safety2 == 5){
+      rrr = filter(rrr, Safety == 5)
+    }
+    if(input$safety2 == 3){
+      rrr = filter(rrr, Safety >= 3)
+    }
+    if(input$safety2 == 0){
+      rrr = filter(rrr, Safety >0)
+    }
+    if(input$airquality2 == 5){
+      rrr = filter(rrr, Airquality == 5)
+    }
+    if(input$airquality2 == 3){
+      rrr = filter(rrr, Airquality >= 3)
+    }
+    if(input$airquality2 == 0){
+      rrr = filter(rrr, Airquality >0)
+    }
     return(rrr)
-
   })
   
   
   preference1 <- reactive({
     rrr <- run
     if(input$riverside == TRUE){
-      rrr = filter(rrr, Riverside == "1")
+     rrr = filter(rrr, Riverside == 1)
     }
-    else rrr = filter(rrr, Riverside == "3")
+    if(input$riverside == FALSE){
+      rrr = filter(rrr, Riverside == 3)
+    }
+    if(input$safety2 == 5){
+      rrr = filter(rrr, Safety == 5)
+    }
+    if(input$safety2 == 3){
+      rrr = filter(rrr, Safety >= 3)
+    }
+    if(input$safety2 == 0){
+      rrr = filter(rrr, Safety >0)
+    }
+    if(input$airquality2 == 5){
+      rrr = filter(rrr, Airquality == 5)
+    }
+    if(input$airquality2 == 3){
+      rrr = filter(rrr, Airquality >= 3)
+    }
+    if(input$airquality2 == 0){
+      rrr = filter(rrr, Airquality > 0)
+    }
     return(rrr)
   })
 
 
   preference2 <- reactive({
     rrr <- run
-    if(input$dog == TRUE){
-      rrr = filter(rrr, Dog == "1")
+    if(input$dog2 == TRUE){
+      rrr = filter(rrr, Dog == 1)
     }
-    else rrr = filter(rrr, Dog == "3")
+    if(input$dog2 == FALSE){
+      rrr = filter(rrr, Dog == 3)
+    }
+    # if(input$safety2 == 5){
+    #   rrr = filter(rrr, Safety == 5)
+    # }
+    # if(input$safety2 == 3){
+    #   rrr = filter(rrr, Safety >= 3)
+    # }
+    # if(input$safety2 == 0){
+    #   rrr = filter(rrr, Safety >0)
+    # }
+    # if(input$airquality2 == 5){
+    #   rrr = filter(rrr, Airquality == 5)
+    # }
+    # if(input$airquality2 == 3){
+    #   rrr = filter(rrr, Airquality >= 3)
+    # }
+    # if(input$airquality2 == 0){
+    #   rrr = filter(rrr, Airquality > 0 )
+    # }
     return(rrr)
   })
 
   preference3 <- reactive({
     rrr <- run
     if(input$drinkingfountain ==TRUE){
-      rrr = filter(rrr, DrinkingFountains == "1")
+      rrr = filter(rrr, DrinkingFountains == 1)
     }
-    else rrr = filter(rrr, DrinkingFountains == "3")
+    if(input$drinkingfountain ==FALSE){
+      rrr = filter(rrr, DrinkingFountains == 3)
+    } 
+    # if(input$safety2 == 5){
+    #   rrr = filter(rrr, Safety == 5)
+    # }
+    # if(input$safety2 == 3){
+    #   rrr = filter(rrr, Safety >= 3)
+    # }
+    # if(input$safety2 == 0){
+    #   rrr = filter(rrr, Safety >0)
+    # }
+    # if(input$airquality2 == 5){
+    #   rrr = filter(rrr, Airquality == 5)
+    # }
+    # if(input$airquality2 == 3){
+    #   rrr = filter(rrr, Airquality >= 3)
+    # }
+    # if(input$airquality2 == 0){
+    #   rrr = filter(rrr, Airquality > 0 )
+    # }
     return(rrr)
   })
 

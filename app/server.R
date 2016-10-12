@@ -1,7 +1,7 @@
 library(shiny)
 library(shinydashboard)
 library(leaflet)
-library(osrm)
+# library(osrm)
 library(sp)
 library(data.table)
 library(ggmap)
@@ -11,7 +11,7 @@ Meander <- function(start_lon,start_lat,end_lon,end_lat,running_distance_in_mile
   library(pryr)
   library(leaflet)
   library(maps)
-  library(osrm)
+  # library(osrm)
   library(geosphere)
   #  1. Longi; 2. Lati;
   node_info=matrix(0,nrow=length(Scores)+2,ncol=3)
@@ -79,13 +79,13 @@ Meander <- function(start_lon,start_lat,end_lon,end_lat,running_distance_in_mile
   print(bestroute)
   print(bestscore)
   
-  route_in_osm=matrix(node_info[start_node,1:2],ncol=2)
-  for (i in 2:stops)
-  {
-    Akke=osrmRoute(c(1,node_info[bestroute[i-1],1],node_info[bestroute[i-1],2]),c(2,node_info[bestroute[i],1],node_info[bestroute[i],2]))
-    route_in_osm=rbind(route_in_osm,as.matrix(Akke),node_info[bestroute[i],1:2])
-  }
-  return(list(bestroute,route_in_osm))
+   route_in_osm=matrix(node_info[start_node,1:2],ncol=2)
+#   for (i in 2:stops)
+#   {
+#     Akke=osrmRoute(c(1,node_info[bestroute[i-1],1],node_info[bestroute[i-1],2]),c(2,node_info[bestroute[i],1],node_info[bestroute[i],2]))
+#     route_in_osm=rbind(route_in_osm,as.matrix(Akke),node_info[bestroute[i],1:2])
+#   }
+   return(list(bestroute,route_in_osm))
 }
 
 
@@ -107,7 +107,7 @@ shinyServer(function(input, output){
   
   # get node data
   nodedata <- read.csv('map_point_withAddress_rescaleAQI.csv')
-  
+  run = nodedata
   
   #points <- eventReactive(input$submit,{
   #var <- cbind(1:5,rnorm(5)*0.01 + -73.96, rnorm(5)*0.01 + 40.8)
@@ -159,7 +159,9 @@ shinyServer(function(input, output){
       #print(score)
       #routes
       routes <- Meander(start_lon, start_lat, -1, -1, distance, as.matrix(nodes[,c(2,1)]), scores)
-      routes[[2]]
+      planB=as.matrix(0,nrow=500,ncol=2)
+      planB=rbind(c(start_lon,start_lat),nodes[routes[[1]][2:(length(routes[[1]])-1)],c(2,1)],c(start_lon,start_lat))
+      as.matrix(planB)
       
     }, ignoreNULL = FALSE
   )
@@ -175,11 +177,198 @@ shinyServer(function(input, output){
       )%>%
       setView(lng = -73.97396, lat =40.78870, zoom =15)%>%
       
-      #addMarkers(data=points(),lat = ~lat,lng = ~lon)%>%
+     # addMarkers(data=points(),lat = ~lat,lng = ~lon)%>%
       addPolylines(data=routes())
     
     
   })
+  ############Menu Item 2
+  parkIcon <-
+    makeIcon(
+      iconUrl = "park icon.png",
+      iconWidth = 40, iconHeight = 40
+    )
+  riverIcon <-
+    makeIcon(
+      iconUrl = "river icon.png",
+      iconWidth = 40, iconHeight = 40
+    ) 
+  waterIcon <-
+    makeIcon(
+      iconUrl = "water icon.png",
+      iconWidth = 40, iconHeight = 40
+    )
+  
+  dogIcon <-
+    makeIcon(
+      iconUrl = "dog icon.png",
+      iconWidth = 30, iconHeight = 30
+    )
+  
+  
+  #set preference for runing environment
+  
+  
+  preference <-  reactive({
+    rrr <- run
+    if(input$park2 == TRUE){
+      rrr = filter(rrr, Park == 1)
+    }
+    if(input$park2 == FALSE){
+      rrr = filter(rrr,Park == 3)
+    }
+    if(input$safety2 == 5){
+      rrr = filter(rrr, Safety == 5)
+    }
+    if(input$safety2 == 3){
+      rrr = filter(rrr, Safety >= 3)
+    }
+    if(input$safety2 == 0){
+      rrr = filter(rrr, Safety >0)
+    }
+    if(input$airquality2 == 5){
+      rrr = filter(rrr, Airquality == 5)
+    }
+    if(input$airquality2 == 3){
+      rrr = filter(rrr, Airquality >= 3)
+    }
+    if(input$airquality2 == 0){
+      rrr = filter(rrr, Airquality >0)
+    }
+    return(rrr)
+  })
+  
+  
+  preference1 <- reactive({
+    rrr <- run
+    if(input$riverside == TRUE){
+      rrr = filter(rrr, Riverside == 1)
+    }
+    if(input$riverside == FALSE){
+      rrr = filter(rrr, Riverside == 3)
+    }
+    if(input$safety2 == 5){
+      rrr = filter(rrr, Safety == 5)
+    }
+    if(input$safety2 == 3){
+      rrr = filter(rrr, Safety >= 3)
+    }
+    if(input$safety2 == 0){
+      rrr = filter(rrr, Safety >0)
+    }
+    if(input$airquality2 == 5){
+      rrr = filter(rrr, Airquality == 5)
+    }
+    if(input$airquality2 == 3){
+      rrr = filter(rrr, Airquality >= 3)
+    }
+    if(input$airquality2 == 0){
+      rrr = filter(rrr, Airquality > 0)
+    }
+    return(rrr)
+  })
+  
+  
+  preference2 <- reactive({
+    rrr <- run
+    if(input$dog2 == TRUE){
+      rrr = filter(rrr, Dog == 1)
+    }
+    if(input$dog2 == FALSE){
+      rrr = filter(rrr, Dog == 3)
+    }
+    if(input$safety2 == 5){
+      rrr = filter(rrr, Safety == 5)
+    }
+    if(input$safety2 == 3){
+      rrr = filter(rrr, Safety >= 3)
+    }
+    if(input$safety2 == 0){
+      rrr = filter(rrr, Safety >0)
+    }
+    if(input$airquality2 == 5){
+      rrr = filter(rrr, Airquality == 5)
+    }
+    if(input$airquality2 == 3){
+      rrr = filter(rrr, Airquality >= 3)
+    }
+    if(input$airquality2 == 0){
+      rrr = filter(rrr, Airquality > 0 )
+    }
+    return(rrr)
+  })
+  
+  preference3 <- reactive({
+    rrr <- run
+    if(input$drinkingfountain ==TRUE){
+      rrr = filter(rrr, DrinkingFountains == 1)
+    }
+    if(input$drinkingfountain ==FALSE){
+      rrr = filter(rrr, DrinkingFountains == 3)
+    } 
+    if(input$safety2 == 5){
+      rrr = filter(rrr, Safety == 5)
+    }
+    if(input$safety2 == 3){
+      rrr = filter(rrr, Safety >= 3)
+    }
+    if(input$safety2 == 0){
+      rrr = filter(rrr, Safety >0)
+    }
+    if(input$airquality2 == 5){
+      rrr = filter(rrr, Airquality == 5)
+    }
+    if(input$airquality2 == 3){
+      rrr = filter(rrr, Airquality >= 3)
+    }
+    if(input$airquality2 == 0){
+      rrr = filter(rrr, Airquality > 0 )
+    }
+    return(rrr)
+  })
+  
+  
+  #add markers for running spots
+  
+  output$map2 <- renderLeaflet({
+    leaflet()%>% 
+      # addTiles(urlTemplate = "https://api.mapbox.com/styles/v1/jackiecao/ciu0jcgy800ah2ipgpsw5usmi/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFja2llY2FvIiwiYSI6ImNpdTBqYXhmcjAxZ24ycGp3ZWZ1bTJoZ3QifQ.VytIrn5ZxVjtZjM15JPA9Q",
+      #          attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
+      # )%>%
+      addProviderTiles("Stamen.Watercolor") %>% 
+      setView(lng = -73.97, lat = 40.75, zoom = 13)  
+    
+  })
+  
+  
+  observe({
+    proxy =
+      leafletProxy("map2")
+    proxy %>%
+      addMarkers(data = preference(), 
+                 ~long, ~lat, icon = parkIcon
+                 ,popup = paste("*Address:",preference()$address,"<br>"), group = "Parks") %>%
+      addMarkers(data = preference1(),
+                 ~long, ~lat, icon = riverIcon
+                 ,popup = paste("*Address:",preference1()$address,"<br>"), group = "Rivers & Pools"
+      ) %>%
+      addMarkers(data = preference2(),
+                 ~long, ~lat, icon = dogIcon
+                 ,popup = paste("*Address:",preference2()$address,"<br>"), group = "Dogs"
+      ) %>%
+      addMarkers(data = preference3(),
+                 ~long, ~lat, icon = waterIcon
+                 ,popup = paste("*Address:",preference3()$address,"<br>"), group = "Water Fountains"
+      ) %>%
+      addLayersControl(
+        position = "topright",
+        overlayGroups = c("Parks","Rivers & Pools","Dogs","Water Fountains"),
+        options = layersControlOptions(collapsed = FALSE)
+      ) 
+  })
+
+  
+  
 })
 
 #shinyApp(ui =ui,server=server)
