@@ -1,3 +1,7 @@
+library(shiny)
+library(shinydashboard)
+library(leaflet)
+library(osrm)
 library(sp)
 library(data.table)
 library(ggmap)
@@ -102,13 +106,13 @@ shinyServer(function(input, output){
   })
   
   # get node data
-  nodedata <- read.csv('map_point_withAddress.csv')
+  nodedata <- read.csv('map_point_withAddress_rescaleAQI.csv')
   
   
   #points <- eventReactive(input$submit,{
-    #var <- cbind(1:5,rnorm(5)*0.01 + -73.96, rnorm(5)*0.01 + 40.8)
-    #colnames(var) <- c("id","lon","lat")
-    #as.data.frame(var)
+  #var <- cbind(1:5,rnorm(5)*0.01 + -73.96, rnorm(5)*0.01 + 40.8)
+  #colnames(var) <- c("id","lon","lat")
+  #as.data.frame(var)
   #}, ignoreNULL = F)
   
   routes<-eventReactive(
@@ -132,7 +136,7 @@ shinyServer(function(input, output){
         
       }
       
-
+      
       
       distance <- input$distance
       #print(distance)
@@ -140,7 +144,14 @@ shinyServer(function(input, output){
       
       DT <- as.data.table(nodedata)
       print(class(input$airquality))
-      score <- DT[, scores := 1000*Park*input$park + 1000*Dog*input$dog + 1000*Riverside*input$river + 1000*DrinkingFountains*input$drink + Airquality* as.numeric(input$airquality) + 1000*RunningTrack*input$track + Safety*as.numeric(input$safety)] 
+      w1 <- 1/(mean(DT$Park))*1000
+      w2 <- 1/(mean(DT$Dog))*1000
+      w3 <- 1/(mean(DT$Riverside))*1000
+      w4 <- 1/(mean(DT$DrinkingFountains))*1000
+      w5 <- 1/(mean(DT$Airquality))*200
+      w6 <- 1/(mean(DT$RunningTrack))*1000
+      w7 <- 1/(mean(DT$Safety))*200
+      score <- DT[, scores := w1*Park*input$park + w2*Dog*input$dog + w3*Riverside*input$river + w4*DrinkingFountains*input$drink + w5*Airquality* as.numeric(input$airquality) + w6*RunningTrack*input$track + w7*Safety*as.numeric(input$safety)] 
       scores <- score[, scores]
       #points <- isolate(points())
       #routes<- osrmTrip(points)
@@ -163,15 +174,13 @@ shinyServer(function(input, output){
         'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiam9leXRoZWRvZyIsImEiOiJjaW41MW5mNmYwY2NrdXJra2g4bmR3Y3dhIn0.5DzFBRvdn_9OHFmDFYwFmw'
       )%>%
       setView(lng = -73.97396, lat =40.78870, zoom =15)%>%
-
+      
       #addMarkers(data=points(),lat = ~lat,lng = ~lon)%>%
       addPolylines(data=routes())
-      
-      
+    
+    
   })
 })
 
 #shinyApp(ui =ui,server=server)
 #1.get location.
-
-

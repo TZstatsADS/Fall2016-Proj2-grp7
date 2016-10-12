@@ -8,7 +8,7 @@ dashboardPage(
   skin = 'purple',
   dashboardHeader(title = 'How New York Runs',
                   titleWidth = 300
-                  ),
+  ),
   
   
   
@@ -55,9 +55,9 @@ dashboardPage(
                          
                          tags$hr(),
                          radioButtons('airquality', 'Air Quality',
-                                      c('Very Important' = 5, 'Important' = 4, 'Fair' = 3, "Doesn't Matter" = 1), 'Important'),
+                                      c('Very Important' = 5, 'Important' = 4, 'Fair' = 3, "Doesn't Matter" = 0), 'Important'),
                          radioButtons('safety', 'Safety', 
-                                      c('Very Important' = 5, 'Important' = 4, 'Fair' = 3, "Doesn't Matter" = 1), 'Fair'),
+                                      c('Very Important' = 5, 'Important' = 4, 'Fair' = 3, "Doesn't Matter" = 0), 'Fair'),
                          
                          checkboxInput('park', 'Park & Garden', FALSE),
                          checkboxInput('river', 'River & Pool', FALSE),
@@ -69,12 +69,12 @@ dashboardPage(
                          tags$br()
                 ),
                 menuItem('Running Map Overview', tabName = 'runmap', icon = shiny::icon('map-pin'))
-                )
- 
+    )
     
-  
     
-  ),
+    
+    
+    ),
   
   dashboardBody(
     
@@ -87,4 +87,4 @@ dashboardPage(
     
     
   )
-)
+    )
